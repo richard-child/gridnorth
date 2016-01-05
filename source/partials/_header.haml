@@ -1,0 +1,21 @@
+%header.c-header
+  .container
+    %a.c-header__logo{href: "/"}
+      %img{src: "/images/header/logo.png", alt: "Refresh Your Website"}/
+    %nav.c-header__nav
+      %ul
+        %li
+          %a{href: "#", class: page_classes.include?("case-studies") ? "selected" : ""}
+            Case Studies
+        %li
+          %a{href: "#", class: page_classes.include?("about") ? "selected" : ""}
+            About
+        %li
+          %a{href: "#", class: page_classes.include?("website-design") ? "selected" : ""}
+            Website Design
+        %li
+          %a{href: "#", class: page_classes.include?("app-design") ? "selected" : ""}
+            App Design
+        %li
+          %a{href: "mailto:richard@gridnorthdesign.com"}
+            Contact
