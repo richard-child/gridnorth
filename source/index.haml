@@ -12,7 +12,7 @@ priority: "1"
         %h2.t-margin-top--20
           I’m Richard Child, a web &amp; mobile designer with 5+ years experience!
       .col-md-4
-        %img.t-border-radius--50{src: "/images/avatar.jpg", alt: "Richard Child"}/
+        %img.t-border-radius--round{src: "/images/avatar.jpg", alt: "Richard Child"}/
 
 %section.t-margin-top--150
   .container
@@ -24,11 +24,11 @@ priority: "1"
           As a business owner, you know your numbers and have a strong understanding of how your business works. But, what about your website/app? Websites and apps play such an important role in business today, can you really afford not to understand how yours was designed?
         %p
           You’ve worked with designers in the past, but design debates were based on aesthetics. Design isn’t art. Debating is healthy, as long as it’s focused on what’s important.
-      .col-md-4
-        %img.t-border-radius--50{src: "/images/homepage/problem.png", alt: "The problem"}/
+      .col-md-4.t-text--center
+        %img.t-border-radius--round{src: "/images/homepage/problem.png", alt: "The problem"}/
     .row.t-margin-top--100
-      .col-md-4
-        %img.t-border-radius--50{src: "/images/homepage/solution.png", alt: "My solution"}/
+      .col-md-4.t-text--center
+        %img.t-border-radius--round{src: "/images/homepage/solution.png", alt: "My solution"}/
       .col-md-8
         %h3
           My solution
@@ -44,16 +44,16 @@ priority: "1"
           By designing based on pricinples, websites and apps I design become far easier to use. These principles are important to me, and lay the foundation for every project that I work on.
         %p
           As I continue to learn, these principles will be updated. In the future, I plan on writing about them in more detail. Below you can read a few examples.
-      .col-md-4
-        %img.t-border-radius--50{src: "/images/homepage/why-me.png", alt: "Why choose me?"}/
+      .col-md-4.t-text--center
+        %img.t-border-radius--round{src: "/images/homepage/why-me.png", alt: "Why choose me?"}/
 
-%section
+%section.t-margin-top--150
   .container
-    .row
+    .row.t-text--center
       .col-md-6.col-md-offset-3
         %h3.t-margin-bottom--20
           Examples of design principles
-        %p
+        %p.t-text--light
           Websites and apps reflect the values of their designers. Here are a few of mine.
     .row.t-margin-top--100
       .col-md-5
@@ -62,10 +62,10 @@ priority: "1"
         %p
           I make sure that there’s enough contrast between colours, and that they pass Web Content Accessibility Guidelines.
       .col-md-6.col-md-offset-1
-        %img.t-border-radius--2{src: "/images/homepage/accessibility.png", alt: "Accessibility"}/
+        %img.t-border-radius--small{src: "/images/homepage/accessibility.png", alt: "Accessibility"}/
     .row.t-margin-top--100
       .col-md-6
-        %img.t-border-radius--2{src: "/images/homepage/readability.png", alt: "Readability"}/
+        %img.t-border-radius--small{src: "/images/homepage/readability.png", alt: "Readability"}/
       .col-md-5.col-md-offset-1
         %h4
           2. Readability
@@ -78,6 +78,6 @@ priority: "1"
         %p
           As an example, sometimes an icon alone isn’t obvious. By simply adding text next to the icon, everyone now knows what it does.
       .col-md-6.col-md-offset-1
-        %img.t-border-radius--2{src: "/images/homepage/obvious.png", alt: "Make it obvious"}/
+        %img.t-border-radius--small{src: "/images/homepage/obvious.png", alt: "Make it obvious"}/
 
 = partial("/partials/testimonials/laura")
