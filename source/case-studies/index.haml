@@ -16,43 +16,13 @@ priority: "1"
   .container
     .row
       .col-md-6
-        .c-case-study-card.cabify
-          .c-case-study-card__logo
-            %img{src: "/images/case-studies/cards/cabify-logo.png", alt: "Cabify logo"}/
-          .c-case-study-card__details
-            %small
-              <span>Cabify</span><br>
-              iPhone app
-            %a{href: "#"}
-              %img{src: "/images/case-studies/cards/chevron.png", alt: "Cabify case study"}/
+        = partial("/partials/case-study-cards/cabify")
       .col-md-6
-        .c-case-study-card.gnarbox
-          .c-case-study-card__logo
-            %img{src: "/images/case-studies/cards/gnarbox-logo.png", alt: "GNARBOX logo"}/
-          .c-case-study-card__details
-            %small
-              <span>GNARBOX</span><br>
-              iPhone &amp; Android apps
-            %a{href: "#"}
-              %img{src: "/images/case-studies/cards/chevron.png", alt: "GNARBOX case study"}/
+        = partial("/partials/case-study-cards/gnarbox")
     .row
       .col-md-6
-        .c-case-study-card.jensonr
-          .c-case-study-card__logo
-            %img{src: "/images/case-studies/cards/jensonr-logo.png", alt: "JensonR+ logo"}/
-          .c-case-study-card__details
-            %small
-              <span>JensonR+</span><br>
-              Website
-            %a{href: "#"}
-              %img{src: "/images/case-studies/cards/chevron.png", alt: "JensonR+ case study"}/
+        = partial("/partials/case-study-cards/jensonr")
       .col-md-6
-        .c-case-study-card.maria-toledo
-          .c-case-study-card__details
-            %small
-              <span>María Toledo</span><br>
-              Website
-            %a{href: "#"}
-              %img{src: "/images/case-studies/cards/chevron.png", alt: "María Toledo case study"}/
+        = partial("/partials/case-study-cards/maria-toledo")
 
 = partial("/partials/testimonials/tim-1")
