@@ -1,29 +1,70 @@
 .c-header
   width: 100%
-  height: 70px
+  height: 60px
   background-color: $header-bg
   position: fixed
   top: 0
   z-index: 10
+  +min-width(481px)
+    height: 70px
+  &.expanded
+    +max-width(480px)
+      height: 320px
+      nav
+        visibility: visible
+        opacity: 1
 
   .c-header__logo
     float: left
-    margin-top: 15px
+    margin-top: 13px
+    +min-width(481px)
+      margin-top: 15px
     img
-      width: 98px
+      width: 84px
+      +min-width(481px)
+        width: 98px
+
+  .c-header__menu-btn
+    cursor: pointer
+    position: absolute
+    border: 2px solid #FFF
+    border-radius: 3px
+    padding: 9px
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 1
+    font-weight: 700
+    color: #FFF
+    top: 12px
+    right: 10px
+    z-index: 20
+    +min-width(481px)
+      display: none
+    img
+      width: 18px
+      margin: -2px 0 0 3px
 
   .c-header__nav
     float: right
+    +max-width(480px)
+      float: left
+      clear: both
+      margin-top: 20px
+      visibility: hidden
+      opacity: 0
+      +transition(opacity 0.1s ease-in)
     ul
       margin: 0
       padding: 0
       font-size: 15px
       list-style-type: none
       li
-        margin: 24px 40px 0 0
-        float: left
-        &:last-child
-          margin-right: 0
+        margin-top: 20px
+        +min-width(481px)
+          margin: 24px 40px 0 0
+          float: left
+          &:last-child
+            margin-right: 0
         a
           &:link, &:visited, &:active
             color: $header-nav-link
