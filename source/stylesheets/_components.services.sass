@@ -36,7 +36,7 @@
 
   .t-text--light
     color: $services-footer-text-light !important
-    margin-bottom: 50px
+    margin-bottom: 100px
 
   .c-services__footer__package
     padding: 30px
@@ -50,3 +50,16 @@
       width: 100%
       margin-top: 40px
       border-radius: 4px
+
+/**
+ * Remove first row margin
+ */
+
+footer
+  .row:nth-of-type(2)
+    .col-md-6:nth-of-type(1)
+      .c-services__footer__package
+        margin-top: 0
+    .col-md-6:nth-of-type(2)
+      .c-services__footer__package:nth-of-type(1)
+        margin-top: 0
