@@ -15,5 +15,5 @@ initMenuToggle= ->
     header.removeClass('expanded')
 
   # Remove expand when anything on the page is clicked
-  $("section").on "click", ->
+  $("section, footer").on "click", ->
     header.removeClass("expanded")
