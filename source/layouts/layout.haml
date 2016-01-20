@@ -12,6 +12,7 @@
 
     = stylesheet_link_tag "main"
     = partial("/partials/javascripts/head")
+    = javascript_include_tag "main"
 
   %body{class: page_classes}
     = partial("/partials/header")
@@ -20,5 +21,3 @@
       = partial("/partials/client-logos")
     - unless ["website-design/index.html", "app-design/index.html", "404/index.html"].include?(current_path)
       = partial("/partials/footer")
-
-    = javascript_include_tag "main"

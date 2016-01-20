@@ -1,7 +1,13 @@
 %header.c-header
   .container
     %a.c-header__logo{href: "/"}
-      %img{src: "/images/header/logo-4.png", alt: "Grid North Design"}/
+      %img#header_logo{src: "/images/header/logo-4.png", alt: "Grid North Design"}/
+      :javascript
+        var logo = $("img#header_logo"),
+          logos = ["/images/header/logo-1.png", "/images/header/logo-2.png", "/images/header/logo-3.png", "/images/header/logo-4.png"],
+          newLogo = logos[Math.floor(Math.random() * logos.length)];
+        logo.attr('src', newLogo);
+
     .c-header__menu-btn
       Menu
       %img{src: "/images/header/menu.png", alt: "Menu"}/
