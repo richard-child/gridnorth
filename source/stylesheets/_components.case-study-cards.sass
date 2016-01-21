@@ -1,59 +1,61 @@
-.c-case-study-card-link
-  display: block
-
-  .c-case-study-card
-    max-width: 450px
-    height: 350px
-    border-radius: 4px
-    position: relative
-    margin-top: 30px
-    &.cabify
-      background: center center no-repeat image-url("case-studies/cards/cabify.jpg")
-      +at2x("/images/case-studies/cards/cabify", jpg, 450px, 350px)
-      background-size: cover
-      .c-case-study-card__logo
-        img
-          margin-top: 103px
-    &.gnarbox
-      background: center center no-repeat image-url("case-studies/cards/gnarbox.jpg")
-      +at2x("/images/case-studies/cards/gnarbox", jpg, 450px, 350px)
-      background-size: cover
-      .c-case-study-card__logo
-        img
-          margin-top: 112px
-    &.jensonr
-      background: center center no-repeat image-url("case-studies/cards/jensonr.jpg")
-      +at2x("/images/case-studies/cards/jensonr", jpg, 450px, 350px)
-      background-size: cover
-      .c-case-study-card__logo
-        img
-          margin-top: 77px
-    &.maria-toledo
-      background: center center no-repeat image-url("case-studies/cards/maria-toledo.jpg")
-      +at2x("/images/case-studies/cards/maria-toledo", jpg, 450px, 350px)
-      background-size: cover
-
+.c-case-study-card
+  width: 100%
+  height: 350px
+  border-radius: 4px
+  position: relative
+  margin-top: 30px
+  &.cabify
+    background: center center no-repeat image-url("case-studies/cards/cabify.jpg")
+    +at2x("/images/case-studies/cards/cabify", jpg, 450px, 350px)
+    background-size: cover !important
     .c-case-study-card__logo
-      text-align: center
-
-    .c-case-study-card__details
-      width: 100%
-      position: absolute
-      bottom: 0
-      background-color: $case-study-card-details-bg
-      display: block
-      padding: 15px 20px
-      small
-        float: left
-        color: $case-study-card-details-text
-        font-style: normal
-        line-height: 1.3
-        font-weight: 400
-        span
-          font-weight: 900
       img
-        float: right
-        border-radius: 50%
+        margin-top: 108px
+  &.gnarbox
+    background: center center no-repeat image-url("case-studies/cards/gnarbox.jpg")
+    +at2x("/images/case-studies/cards/gnarbox", jpg, 450px, 350px)
+    background-size: cover !important
+    .c-case-study-card__logo
+      img
+        margin-top: 116px
+  &.jensonr
+    background: center center no-repeat image-url("case-studies/cards/jensonr.jpg")
+    +at2x("/images/case-studies/cards/jensonr", jpg, 450px, 350px)
+    background-size: cover !important
+    .c-case-study-card__logo
+      img
+        margin-top: 80px
+  &.maria-toledo
+    background: center center no-repeat image-url("case-studies/cards/maria-toledo.jpg")
+    +at2x("/images/case-studies/cards/maria-toledo", jpg, 450px, 350px)
+    background-size: cover !important
+
+  .c-case-study-card__logo
+    text-align: center
+
+  .c-case-study-card__details
+    width: 100%
+    position: absolute
+    bottom: 0
+    background-color: $case-study-card-details-bg
+    display: block
+    padding: 15px
+    +min-width(481px)
+      padding: 15px 20px
+    small
+      float: left
+      color: $case-study-card-details-text
+      font-style: normal
+      line-height: 1.3
+      font-weight: 400
+      +max-width(480px)
+        margin-top: 2px
+      span
+        font-weight: 900
+    img
+      float: right
+      border-radius: 50%
+      +min-width(481px)
         margin-top: 2px
 
 /**
@@ -62,6 +64,11 @@
 
 section
   .row:nth-of-type(1)
-    .col-sm-6
-      .c-case-study-card
-        margin-top: 0
+    +max-width(767px)
+      .col-sm-6:nth-of-type(1)
+        .c-case-study-card
+          margin-top: 0
+    +min-width(768px)
+      .col-sm-6
+        .c-case-study-card
+          margin-top: 0
