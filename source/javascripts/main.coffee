@@ -10,10 +10,8 @@ initMenuToggle= ->
   header.find(".c-header__menu-btn").on "click", ->
     header.toggleClass("expanded")
 
-  # Remove expand when link is clicked
   header.find("a").on "click", ->
     header.removeClass('expanded')
 
-  # Remove expand when anything on the page is clicked
   $("section, footer").on "click", ->
     header.removeClass("expanded")

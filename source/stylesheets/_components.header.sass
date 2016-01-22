@@ -5,10 +5,10 @@
   position: fixed
   top: 0
   z-index: 10
-  +min-width(769px)
+  +min-width(768px)
     height: 70px
   &.expanded
-    +max-width(768px)
+    +max-width(767px)
       height: 320px
       nav
         visibility: visible
@@ -17,11 +17,11 @@
   .c-header__logo
     float: left
     margin-top: 13px
-    +min-width(769px)
+    +min-width(768px)
       margin-top: 15px
     img
       width: 84px
-      +min-width(769px)
+      +min-width(768px)
         width: 98px
 
   .c-header__menu-btn
@@ -38,7 +38,7 @@
     top: 12px
     right: 10px
     z-index: 20
-    +min-width(769px)
+    +min-width(768px)
       display: none
     img
       width: 18px
@@ -46,7 +46,7 @@
 
   .c-header__nav
     float: right
-    +max-width(768px)
+    +max-width(767px)
       float: left
       clear: both
       margin-top: 30px
@@ -60,7 +60,7 @@
       list-style-type: none
       li
         margin-top: 20px
-        +min-width(769px)
+        +min-width(768px)
           margin: 24px 40px 0 0
           float: left
           &:last-child
