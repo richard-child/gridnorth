@@ -1,16 +1,16 @@
 %header.c-header
   .container
     %a.c-header__logo{href: "/"}
-      %img#header_logo{src: "/images/header/logo-4.png", alt: "Grid North Design"}/
+      %img#header_logo{src: "/images/header/logo-4.png", alt: "Grid North Design", data: {"no-retina" => true}}/
       :javascript
         var logo = $("img#header_logo"),
           logos = ["/images/header/logo-1.png", "/images/header/logo-2.png", "/images/header/logo-3.png", "/images/header/logo-4.png"],
           newLogo = logos[Math.floor(Math.random() * logos.length)];
-        logo.attr('src', newLogo);
+        logo.attr("src", newLogo);
 
     .c-header__menu-btn
       Menu
-      %img{src: "/images/header/menu.png", alt: "Menu", data: {at2x: "http://gridnorthdesign.com/images/header/menu@2x.png"}}/
+      %img{src: "/images/header/menu.png", alt: "Menu", data: {at2x: "http://www.gridnorthdesign.com/images/header/menu@2x.png"}}/
     %nav.c-header__nav
       %ul
         %li
@@ -26,5 +26,5 @@
           %a{href: "/app-design", class: page_classes.include?("app-design") ? "selected" : ""}
             App Design
         %li
-          %a{href: "http://thisincludes.typeform.com/to/Y5uji9", target: "_blank"}
+          %a{href: "https://thisincludes.typeform.com/to/Y5uji9", target: "_blank"}
             Contact

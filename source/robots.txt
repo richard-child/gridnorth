@@ -1,5 +1,5 @@
-# www.robotstxt.org/
-# http://code.google.com/web/controlcrawlindex/
+# www.robotstxt.org
+# https://code.google.com/web/controlcrawlindex
 
 User-agent: *
 Sitemap: http://www.gridnorthdesign.com/sitemap.xml
