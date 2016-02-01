@@ -42,7 +42,7 @@
 
 .c-services__footer
   padding: 70px 0 100px
-  background: $services-footer-bg center bottom no-repeat image-url("footer/mountains.png")
+  background: $services-footer-bg center bottom no-repeat image-url("footer/footer-bg.png")
   background-size: contain
   +min-width(481px)
     padding: 100px 0 150px
@@ -65,10 +65,14 @@
       margin-top: 50px
 
     .c-btn
-      width: 100%
-      margin-top: 30px
-      +min-width(481px)
-        margin-top: 50px
+      &:link, &:visited, &:active
+        width: 100%
+        margin-top: 30px
+        background-color: $services-footer-button-bg
+        +min-width(481px)
+          margin-top: 50px
+      &:hover, &:focus
+        background-color: $services-footer-button-bg-hover
 
 /**
  * Remove first row margin

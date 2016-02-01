@@ -1,8 +1,14 @@
-.c-section--light
+.c-section
   padding: 70px 0
-  background-color: $section-light-bg
-  border: solid $section-light-border
-  border-width: 1px 0
   margin: 100px 0 0
   +min-width(481px)
     padding: 100px 0
+  .c-caption
+    color: $section-caption
+  &.light
+    background-color: $section-light-bg
+    border: solid $section-light-border
+    border-width: 1px 0
+  &.netmag
+    background: $section-netmag-bg center center no-repeat image-url("about/netmag-bg.png")
+    background-size: cover
