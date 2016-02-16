@@ -1,6 +1,6 @@
 # Static site generator
 
-Grid North Design is built using the [Middleman](http://middlemanapp.com) static site generator.
+Grid North Design is built using the [Middleman](https://middlemanapp.com) static site generator.
 
 * Start server: `middleman`
 * Build: `middleman build`
