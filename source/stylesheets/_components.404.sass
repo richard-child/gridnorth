@@ -1,5 +1,22 @@
+body.x404
+  h1
+    margin-bottom: 20px
+    +min-width(481px)
+      margin-bottom: 40px
+  .c-x404__gif
+    display: none
+    +min-width(768px)
+      display: block
+
 body.x404_reveal
-  background-color: $x404-reveal-background
+  background: $x404-reveal-bg center center no-repeat image-url("404/reveal.jpg")
+  background-size: cover
+  .c-header
+    background: $x404-reveal-header-bg
+    .c-header__nav
+      a
+        &:link, &:visited, &:active
+          color: $x404-reveal-header-nav-link
   h1
     font-family: "Permanent Marker", cursive
     font-size: 60px
