@@ -2,8 +2,8 @@
   width: 100%
   height: 350px
   border-radius: 4px
-  position: relative
   margin-top: 30px
+  position: relative
   &.cabify
     background: center center no-repeat image-url("case-studies/cards/cabify.jpg")
     +at2x("/images/case-studies/cards/cabify", jpg, 450px, 350px)
@@ -29,6 +29,14 @@
     background: center center no-repeat image-url("case-studies/cards/maria-toledo.jpg")
     +at2x("/images/case-studies/cards/maria-toledo", jpg, 450px, 350px)
     background-size: cover !important
+
+  .c-case-study-card__link
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 10
 
   .c-case-study-card__logo
     text-align: center
