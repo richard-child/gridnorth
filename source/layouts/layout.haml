@@ -9,7 +9,6 @@
     %meta{content: "width=device-width, initial-scale=1.0, user-scalable=no", name: "viewport"}/
     %link{rel: "shortcut icon", href: "/images/favicon.ico"}
     %link{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,900", type: "text/css"}
-    %link{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Permanent+Marker", type: "text/css"}
 
     = stylesheet_link_tag "main"
     = javascript_include_tag "main"
@@ -18,7 +17,7 @@
   %body{class: page_classes}
     = partial("/partials/header")
     = yield
-    - unless ["website-design/index.html", "app-design/index.html", "404/index.html", "404/reveal/index.html"].include?(current_path)
+    - unless ["website-design/index.html", "app-design/index.html", "404/index.html"].include?(current_path)
       = partial("/partials/client-logos")
-    - unless ["website-design/index.html", "app-design/index.html", "404/index.html", "404/reveal/index.html"].include?(current_path)
+    - unless ["website-design/index.html", "app-design/index.html", "404/index.html"].include?(current_path)
       = partial("/partials/footer")
