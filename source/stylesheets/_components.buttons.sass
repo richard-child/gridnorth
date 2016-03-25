@@ -3,7 +3,7 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     display: inline-block
-    padding: 14px 30px
+    padding: 14px 30px 16px
     color: $btn-text
     background-color: $btn-bg
     border-radius: 2px
@@ -13,6 +13,26 @@
     text-align: center
     +min-width(481px)
       font-size: 18px
+  &:hover, &:focus
+    background-color: $btn-bg-hover
+  &:active
+    background-color: $btn-bg-active
+
+.c-btn--large
+  &:link, &:visited, &:active
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    display: inline-block
+    padding: 14px 30px 16px
+    color: $btn-text
+    background-color: $btn-bg
+    border-radius: 2px
+    min-width: 200px
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+    +min-width(481px)
+      font-size: 20px
   &:hover, &:focus
     background-color: $btn-bg-hover
   &:active

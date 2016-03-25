@@ -50,13 +50,13 @@ priority: "1"
   .container
     .row.t-text--center
       .col-sm-6.col-sm-offset-3
-        %h3.t-margin-bottom--20
+        %h3
           Examples of design principles
         %p.t-text--light
           Websites and apps reflect the values of their designers. Here are a few of mine.
     .row.t-margin-top--100
       .col-sm-6.col-sm-offset-1.col-sm-push-5.t-text--center
-        %img.t-border-radius--small{src: "/images/home/accessibility.png", alt: "Accessibility", data: {at2x: "http://www.gridnorthdesign.com/images/home/accessibility@2x.png"}}/
+        %img.t-border-radius--small{src: "/images/principles/accessibility.png", alt: "Accessibility"}/
       .col-sm-5.col-sm-pull-7
         %h4.t-margin-top--50
           1. Accessibility
@@ -64,7 +64,7 @@ priority: "1"
           I make sure that there’s enough contrast between colours, and that they pass Web Content Accessibility Guidelines.
     .row.t-margin-top--100
       .col-sm-6.t-text--center
-        %img.t-border-radius--small{src: "/images/home/readability.png", alt: "Readability", data: {at2x: "http://www.gridnorthdesign.com/images/home/readability@2x.png"}}/
+        %img.t-border-radius--small{src: "/images/principles/readability.png", alt: "Readability"}/
       .col-sm-5.col-sm-offset-1
         %h4.t-margin-top--50
           2. Readability
@@ -72,11 +72,15 @@ priority: "1"
           Font choice, font size, line length and line height. I focus on getting these details right to ensure text is easy to read.
     .row.t-margin-top--100
       .col-sm-6.col-sm-offset-1.col-sm-push-5.t-text--center
-        %img.t-border-radius--small{src: "/images/home/obvious.png", alt: "Make it obvious", data: {at2x: "http://www.gridnorthdesign.com/images/home/obvious@2x.png"}}/
+        %img.t-border-radius--small{src: "/images/principles/obvious.png", alt: "Make it obvious"}/
       .col-sm-5.col-sm-pull-7
         %h4.t-margin-top--50
           3. Make it obvious
         %p
           As an example, sometimes an icon alone isn’t obvious. By simply adding text next to the icon, everyone now knows what it does.
+    .row
+      .col-sm-6.col-sm-offset-3.t-text--center
+        %a.c-btn--large.t-margin-top--100{href: "/principles"}
+          More design principles
 
 = partial("/partials/testimonials/laura")
