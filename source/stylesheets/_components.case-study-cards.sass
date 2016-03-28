@@ -4,6 +4,11 @@
   border-radius: 4px
   margin-top: 30px
   position: relative
+  &:hover
+    .c-case-study-card__details
+      small
+        color: $case-study-card-details-text-hover
+        +transition(color 0.15s ease-in)
   &.cabify
     background: center center no-repeat image-url("case-studies/cards/cabify.jpg")
     +at2x("/images/case-studies/cards/cabify", jpg, 450px, 350px)
@@ -29,6 +34,25 @@
     background: center center no-repeat image-url("case-studies/cards/maria-toledo.jpg")
     +at2x("/images/case-studies/cards/maria-toledo", jpg, 450px, 350px)
     background-size: cover !important
+  &.ryw
+    background: center center no-repeat image-url("case-studies/cards/ryw.jpg")
+    +at2x("/images/case-studies/cards/ryw", jpg, 450px, 350px)
+    background-size: cover !important
+    .c-case-study-card__logo
+      img
+        margin-top: 102px
+  &.sketchtricks
+    background-color: #202C3A
+    .c-case-study-card__logo
+      img
+        margin-top: 71px
+  &.sketchtohtml
+    background: center center no-repeat image-url("case-studies/cards/sketchtohtml.jpg")
+    +at2x("/images/case-studies/cards/sketchtohtml", jpg, 450px, 350px)
+    background-size: cover !important
+    .c-case-study-card__logo
+      img
+        margin-top: 37px
 
   .c-case-study-card__link
     position: absolute
@@ -36,7 +60,7 @@
     height: 100%
     top: 0
     left: 0
-    z-index: 10
+    z-index: 20
 
   .c-case-study-card__logo
     text-align: center
@@ -65,6 +89,18 @@
       border-radius: 50%
       +min-width(481px)
         margin-top: 2px
+
+  .c-case-study-card__sold
+    font-size: 14px
+    font-weight: 700
+    color: $case-study-card-sold-text
+    text-transform: uppercase
+    background-color: $case-study-card-sold-bg
+    padding: 4px 8px
+    border-radius: 2px
+    position: absolute
+    top: 20px
+    right: 20px
 
 /**
  * Remove first row margin

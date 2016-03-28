@@ -14,6 +14,8 @@ priority: "0.8"
 
 %section
   .container
+    %h3.t-margin-bottom--50
+      Client work
     .row
       .col-sm-6
         = partial("/partials/case-study-cards/cabify")
@@ -24,5 +26,18 @@ priority: "0.8"
         = partial("/partials/case-study-cards/jensonr")
       .col-sm-6
         = partial("/partials/case-study-cards/maria-toledo")
+
+%section
+  .container
+    %h3.t-margin-bottom--50
+      Personal projects
+    .row
+      .col-sm-6
+        = partial("/partials/case-study-cards/refreshyourwebsite")
+      .col-sm-6
+        = partial("/partials/case-study-cards/sketchtricks")
+    .row
+      .col-sm-6
+        = partial("/partials/case-study-cards/sketchtohtml")
 
 = partial("/partials/testimonials/tim-1")
