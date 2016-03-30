@@ -10,15 +10,50 @@ priority: "0.6"
         %h1
           Sketch Tricks
         %h2
-          Articles & resources for designers that use Sketch.
+          Articles & resources for designers that use Sketch software.
+
+%section.c-section.cs-image.sketchtricks
+  %img.t-border-radius--medium{src: "/images/case-studies/sketchtricks/home.jpg", alt: "Sketch Tricks website"}/
+
+%section
+  .container
+    .row
+      .col-sm-8.col-sm-offset-2
+        :markdown
+          ### About Sketch Tricks
+
+          Sketch is a piece of design software that designers use to create websites, apps, icons etc. When Sketch was new, I setup a website called Sketch Tricks, providing articles and resources for designers.
+
+          A Medium publication was created, so that designers could contribute articles to the project. Once an article had been submitted, it was added to the website and shared amongst the community.
+
+          Before selling Sketch Tricks, it had reached 5500+ Twitter followers, 2300+ Medium followers and 3700+ email subscribers. Sketch Tricks was sold to Marko Vuletić.
+
+%section
+  .container
+    %img.t-border-radius--medium{src: "/images/case-studies/sketchtricks/netmag.jpg", alt: "Net magazine article"}/
+    %small.c-caption
+      My Sketch tutorial for designers in an issue of Net magazine.
 
 %section
   .container
     .row
       .col-sm-8.col-sm-offset-2
         %h3
-          About Cabify
+          Netmag article
         %p
-          Cabify is a Spanish startup that designs and develops apps for personal transportation. Today, Cabify is available in Spain, Chile, Mexico and Peru. It's had more than 100,000 downloads of its apps globally since launch, and raised an $8 million Series A to accelerate growth in Latin America. Cabify was recognised as one of Europe’s fastest growing startups by The Next Web.
+          Recently, I was asked to write a Sketch tutorial for Net magazine, on the subject of website guidelines. If you use Sketch, you can <a href="http://www.creativebloq.com/web-design/build-pattern-library-sketch-101517315" target="_blank">read the article online</a>. Let me know what you think!
+
+%section.c-more-case-studies
+  .container
+    %h3
+      More case studies
+    .row
+      .col-sm-6
+        = partial("/partials/case-study-cards/sketchtohtml")
+      .col-sm-6
+        = partial("/partials/case-study-cards/cabify")
+    .row
+      .col-sm-6
+        = partial("/partials/case-study-cards/gnarbox")
 
 = partial("/partials/testimonials/laura")
