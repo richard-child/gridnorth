@@ -17,7 +17,7 @@
   %body{class: page_classes}
     = partial("/partials/header")
     = yield
-    - unless ["website-design/index.html", "app-design/index.html", "404/index.html"].include?(current_path)
+    - unless ["website-design/index.html", "app-design/index.html", "404/index.html", "magic/index.html"].include?(current_path)
       = partial("/partials/client-logos")
     - unless ["website-design/index.html", "app-design/index.html"].include?(current_path)
       = partial("/partials/footer")
