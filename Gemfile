@@ -18,3 +18,6 @@ gem "jquery-middleman"
 gem "middleman-sprockets", "3.3.2"
 
 gem "builder"
+
+gem "middleman-dotenv"
+gem "middleman-s3_sync"
