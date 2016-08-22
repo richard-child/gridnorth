@@ -10,9 +10,12 @@
 
     .c-header__menu-btn
       Menu
-      %img{src: "/images/header/menu.png", alt: "Menu", data: {at2x: "http://www.gridnorthdesign.com/images/header/menu@2x.png"}}/
+      %img{src: "/images/header/menu.png", data: {at2x: "http://www.gridnorthdesign.com/images/header/menu@2x.png"}}/
     %nav.c-header__nav
       %ul
+        %li
+          %a{href: "/articles", class: page_classes.include?("articles") ? "selected" : ""}
+            Articles
         %li
           %a{href: "/case-studies", class: page_classes.include?("case-studies") ? "selected" : ""}
             Case Studies
@@ -20,5 +23,5 @@
           %a{href: "/about", class: page_classes.include?("about") ? "selected" : ""}
             About
         %li
-          %a{href: "mailto:richard@gridnorthdesign.com"}
-            Contact
+          %a{href: "/newsletter", class: page_classes.include?("newsletter") ? "selected" : ""}
+            Newsletter
