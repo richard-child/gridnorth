@@ -1,14 +1,13 @@
 !!!
 %html
   %head
-    %title= current_page.data.title || "Web &amp; Mobile Design for Small-Medium Sized Businesses &mdash; Grid North Design"
+    %title= current_page.data.title || "Travel startup? Stop fighting UI templates and learn how design can solve real problems &mdash; Grid North Design"
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    %meta{content: "Grid North Design provides web &amp; mobile design services for small-medium sized businesses.", name: "description"}/
-    %meta{content: "web, website, mobile, design, richard, child, grid, north, gridnorthdesign", name: "keywords"}/
+    %meta{content: "Grid North Design provides mobile design services for travel startups.", name: "description"}/
+    %meta{content: "mobile, design, richard, child, grid, north, gridnorthdesign, travel, startup", name: "keywords"}/
     %meta{content: "width=device-width, initial-scale=1.0, user-scalable=no", name: "viewport"}/
     %link{rel: "shortcut icon", href: "/images/favicon.ico"}
-    %link{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,900", type: "text/css"}
 
     = stylesheet_link_tag "main"
     = javascript_include_tag "main"
@@ -17,7 +16,4 @@
   %body{class: page_classes}
     = partial("/partials/header")
     = yield
-    - unless ["website-design/index.html", "app-design/index.html", "404/index.html", "magic/index.html"].include?(current_path)
-      = partial("/partials/client-logos")
-    - unless ["website-design/index.html", "app-design/index.html"].include?(current_path)
-      = partial("/partials/footer")
+    = partial("/partials/footer")

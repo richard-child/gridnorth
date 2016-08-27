@@ -1,13 +1,7 @@
 ---
-priority: "1"
+title: "Newsletter &mdash; Grid North Design"
+priority: "0.8"
 ---
-
-%section.c-intro.home
-  .container
-    .row
-      .col-sm-10.col-sm-offset-1
-        %h1
-          Travel startup? Stop fighting UI templates and learn how design can solve real problems
 
 %section.t-margin-bottom--150
   .container
@@ -24,9 +18,7 @@ priority: "1"
 
         %form.c-form{action: "http://gridnorthdesign.us3.list-manage.com/subscribe/post?u=48d252a5dc52e58fa1fce06ec&amp;id=18dc9c98bf", method: "post", target: "_blank", novalidate: ""}
           %input.c-form__input{name: "EMAIL", placeholder: "Email address...", type: "email", value: ""}/
-          %input{name: "LOCATION", type: "hidden", value: "Home"}/
+          %input{name: "LOCATION", type: "hidden", value: "Newsletter"}/
           %input.c-form__btn{name: "subscribe", type: "submit", value: "Sign up"}/
           %small.c-form__unsubscribe
             No spam, ever. Unsubscribe at any time.
-
-= partial("/partials/testimonials/laura")
