@@ -1,6 +1,4 @@
 .c-header
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
   width: 100%
   height: 60px
   background-color: $header-bg
@@ -11,7 +9,7 @@
     height: 70px
   &.expanded
     +max-width(767px)
-      height: 320px
+      height: 240px
       nav
         visibility: visible
         opacity: 1
@@ -29,14 +27,14 @@
   .c-header__menu-btn
     cursor: pointer
     position: absolute
-    border: 2px solid #FFF
+    border: 2px solid $header-menu-btn-border
     border-radius: 3px
     padding: 9px
     text-transform: uppercase
     font-size: 14px
     line-height: 1
     font-weight: 700
-    color: #FFF
+    color: $header-menu-btn-text
     top: 12px
     right: 10px
     z-index: 20
