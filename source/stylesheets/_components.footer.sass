@@ -1,7 +1,11 @@
 .c-footer
   background: $footer-bg center bottom no-repeat image-url("footer-bg.png")
-  background-size: cover
+  background-size: contain
   text-align: center
 
   .c-footer__copyright
-    margin: 310px 0 50px
+    margin: 100px 0 50px
+    +min-width(481px)
+      margin-top: 200px
+    +min-width(768px)
+      margin-top: 310px
