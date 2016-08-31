@@ -17,7 +17,7 @@
 /.sass-cache
 /.cache
 
-# Ignore .DS_store file
+# Ignore .DS_Store file
 .DS_Store
 
 /tmp
