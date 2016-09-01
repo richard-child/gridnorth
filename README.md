@@ -10,7 +10,7 @@ Grid North Design is built using the [Middleman](https://middlemanapp.com) stati
 
 The CSS for Grid North Design is based on the Inverted Triangle CSS (ITCSS) architecture. ITCSS involves visualising your CSS project as a layered upside-down triangle.
 
-*The following information is taken directly from the ITCSS net mag article by Harry Roberts.*
+*The following information is taken directly from the ITCSS Net magazine article by Harry Roberts.*
 
 ### Layers of the inverted triangle
 
@@ -20,7 +20,7 @@ The CSS for Grid North Design is based on the Inverted Triangle CSS (ITCSS) arch
 4. Elements
 5. Objects
 6. Components
-7. Trumps
+7. Utilities
 
 Each layer is a logical progression, getting more specific, explicit and intentioned.
 
@@ -29,8 +29,8 @@ Each layer is a logical progression, getting more specific, explicit and intenti
 The prerequisites for working with ITCSS are:
 
 * No CSS IDs
-* You build reusable UI patterns and not 'pages'
-* You don't believe that 'less markup' and 'clean markup' are the same thing; and you understand that binding onto classes, rather than bare HTML elements, provides a more robust and scalable architecture
+* You build reusable UI patterns and not "pages"
+* You don't believe that "less markup" and "clean markup" are the same thing; and you understand that binding onto classes, rather than bare HTML elements, provides a more robust and scalable architecture
 
 ### 1. Settings
 
@@ -50,15 +50,15 @@ Bare, unclassed HTML elements.
 
 ### 5. Objects
 
-Class-based selectors that are concerned with styling non-cosmetic design patterns. It contains things like a .container element, layout systems etc.
+Class-based selectors that are concerned with styling non-cosmetic design patterns. It contains things like a `.container` element, layout systems etc.
 
 ### 6. Components
 
 The components layer contains styling for recognisable pieces of UI. Adding new components and features usually makes up the majority of development.
 
-### 7. Trumps
+### 7. Utilities
 
-This layer trumps all other layers and has the power to override anything at all that has gone before it. A lot of declarations will carry !important.
+This layer overrides all other layers and has the power to override anything at all that has gone before it. A lot of declarations will carry `!important`
 
 ### Naming convention
 
@@ -69,3 +69,5 @@ Example:
 _settings.global.sass
 
 Each CSS file should be kept as small as possible, with each one containing only as much CSS as it needs to fulfil its role.
+
+*Fun fact: Hillary Clinton uses ITCSS, and the Trumps layer was officially renamed to "Utilities" because of Donald Trump.*
