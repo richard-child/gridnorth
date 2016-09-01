@@ -58,7 +58,7 @@ The components layer contains styling for recognisable pieces of UI. Adding new 
 
 ### 7. Utilities
 
-This layer overrides all other layers and has the power to override anything at all that has gone before it. A lot of declarations will carry `!important`
+This layer overrides all other layers. A lot of declarations will carry `!important`
 
 ### Naming convention
 
