@@ -1,21 +1,10 @@
 .c-intro
-  background-color: $intro-bg
-  padding: 70px 0 80px
+  background: $intro-bg bottom center no-repeat image-url("intro-bg.jpg")
+  background-size: cover
+  padding: 120px 0 80px
   margin: 0 0 70px
   +min-width(481px)
     padding: 200px 0 100px
     margin: 0 0 100px
   h1
     color: $intro-h1
-  h2
-    color: $intro-h2
-  p
-    color: $intro-p
-  &.light
-    h2
-      color: $intro-light-h2
-    p
-      color: $intro-light-p
-  &.home
-    background: $intro-bg bottom center no-repeat image-url("intro-bg.jpg")
-    background-size: cover

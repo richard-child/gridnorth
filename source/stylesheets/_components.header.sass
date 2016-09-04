@@ -3,12 +3,14 @@
   -ms-overflow-style: -ms-autohiding-scrollbar
   width: 100%
   height: 70px
-  background-color: $header-bg
+  background: $header-bg
   overflow-x: auto
   white-space: nowrap
   position: fixed
   top: 0
-  z-index: 30
+  z-index: 20
+  +max-width(520px)
+    background: linear-gradient(to right, #000 0%, #1a1a1a 100%)
 
   .c-header__logo
     margin: 15px 60px 0 0
