@@ -1,10 +1,22 @@
 .c-intro
-  background: $intro-bg bottom center no-repeat image-url("intro-bg.jpg")
+  background: $intro-bg center center no-repeat image-url("intro-bg.jpg")
   background-size: cover
-  padding: 120px 0 80px
+  padding: 120px 0 100px
   margin: 0 0 70px
+  position: relative
   +min-width(481px)
-    padding: 200px 0 100px
-    margin: 0 0 100px
+    padding: 250px 0 150px
+    margin: 0 0 120px
   h1
     color: $intro-h1
+
+.intro__arrow
+  width: 64px
+  height: 64px
+  background-color: $intro-arrow-bg
+  box-shadow: $intro-arrow-bg-shadow
+  margin-left: -32px
+  border-radius: 50%
+  position: absolute
+  left: 50%
+  bottom: -32px
