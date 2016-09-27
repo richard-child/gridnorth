@@ -14,9 +14,10 @@
     margin-right: 15px
     float: left
     +appearance(none)
+    +max-width(480px)
+      font-size: 20px
     +max-width(415px)
       height: 64px
-      font-size: 20px
       text-indent: 12px
     &:focus
       outline: 0
@@ -37,11 +38,12 @@
     +transition(background-color 0.1s ease-in)
     +max-width(575px)
       margin-top: 10px
+    +max-width(480px)
+      font-size: 19px
     +max-width(415px)
       width: 100%
       max-width: 385px
       height: 56px
-      font-size: 19px
     &:hover, &:focus
       background-color: $form-btn-bg-hover
       outline: 0

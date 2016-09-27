@@ -5,6 +5,7 @@
   height: 70px
   background: $header-bg
   overflow-x: auto
+  overflow-y: hidden
   white-space: nowrap
   position: fixed
   top: 0
@@ -22,13 +23,11 @@
 
   .c-header__logo
     margin: 15px 60px 0 0
-    display: inline-block
     float: left
     img
       width: 98px
 
   .c-header__nav
-    display: inline-block
     ul
       font-size: 15px
       list-style-type: none
@@ -36,12 +35,13 @@
       padding: 0
       li
         margin: 24px 30px 0 0
-        float: left
+        display: inline-block
         &:last-child
           margin-right: 60px
         a
           &:link, &:visited, &:active
             color: $header-nav-link
+            font-weight: 700
             +transition(all 0.1s ease-in)
             &.selected
               color: $header-nav-link-selected
