@@ -1,25 +1,30 @@
 .c-testimonial
-  padding: 20px 0
-  +min-width(481px)
-    border-left: 6px solid $testimonial-border
-    padding-left: 30px
-  +min-width(768px)
-    padding-left: 50px
+  +max-width(480px)
+    margin-bottom: 20px
 
-  .c-testimonial__author
-    margin-top: 40px
-    display: block
-    img
-      border-radius: 50%
-    small
-      vertical-align: middle
+  .c-testimonial__quote
+    padding: 20px 0
+    +min-width(481px)
+      border-left: 6px solid $testimonial-border
+      padding-left: 30px
+    +min-width(768px)
+      padding-left: 50px
+
+    .c-testimonial__author
+      margin-top: 30px
       display: block
-      color: $testimonial-author-text
-      font-style: normal
-      line-height: 1.3
-      margin-top: 10px
       +min-width(481px)
+        margin-top: 40px
+      img
+        border-radius: 50%
+      small
+        vertical-align: middle
         display: inline-block
-        margin: 0 0 0 10px
-      span
-        font-weight: 700
+        color: $testimonial-author-text
+        font-style: normal
+        line-height: 1.3
+        margin-left: 5px
+        +min-width(481px)
+          margin-left: 10px
+        span
+          font-weight: 700
