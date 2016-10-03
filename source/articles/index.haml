@@ -14,10 +14,21 @@ priority: "0.8"
           Articles
         %p
           Sign up now to get in-depth guides, articles, and downloadable resources on mobile design for travel businesses. My goal is to make it as easy as possible for you to start making significant changes to your business.
-
-        %form.c-form{action: "http://gridnorthdesign.us3.list-manage.com/subscribe/post?u=48d252a5dc52e58fa1fce06ec&amp;id=18dc9c98bf", method: "post", target: "_blank", novalidate: ""}
+        %form.c-form{action: "//gridnorthdesign.us3.list-manage.com/subscribe/post?u=48d252a5dc52e58fa1fce06ec&amp;id=18dc9c98bf", method: "post", target: "_blank", novalidate: ""}
           %input.c-form__input{name: "EMAIL", placeholder: "Email address...", type: "email", value: ""}/
           %input{name: "LOCATION", type: "hidden", value: "Articles"}/
           %input.c-form__btn{name: "subscribe", type: "submit", value: "Sign up"}/
           %small.c-form__unsubscribe
             No spam, ever. Unsubscribe at any time.
+
+%section
+  .container
+    .row
+      .col-sm-10.col-sm-offset-1
+        %ul.c-articles__list
+          %li
+            %h4
+              %a{href: "/articles/annoying-notifications"}
+                71% of app uninstalls are because of annoying notifications (Facebook F8 developer conference)
+            %p
+              This stat was shown on a slide at Facebook’s F8 developer conference. As a business owner, you might think that sending lots of notifications is a good thing, as they draw attention back to your app. But, more often than not they’re annoying, and will cause customers to uninstall the app. That said, if done the right way, notifications can actually be useful.
