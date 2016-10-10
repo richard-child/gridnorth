@@ -10,10 +10,11 @@ priority: "0.8"
   .container
     .row
       .col-sm-10.col-sm-offset-1
-        %h2
-          Articles
-        %p
+        :markdown
+          ## Articles
+
           Sign up now to get in-depth guides, articles, and downloadable resources on mobile design for travel businesses. My goal is to make it as easy as possible for you to start making significant changes to your business.
+
         %form.c-form{action: "//gridnorthdesign.us3.list-manage.com/subscribe/post?u=48d252a5dc52e58fa1fce06ec&amp;id=18dc9c98bf", method: "post", target: "_blank", novalidate: ""}
           %input.c-form__input{name: "EMAIL", placeholder: "Email address...", type: "email", value: ""}/
           %input{name: "LOCATION", type: "hidden", value: "Articles"}/
