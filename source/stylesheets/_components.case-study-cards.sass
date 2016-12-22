@@ -9,13 +9,17 @@
       small
         color: $case-study-card-details-text-hover
         +transition(color 0.15s ease-in)
+  &.gnarbox-1
+    background: center center no-repeat image-url("case-studies/cards/gnarbox-1.jpg")
+    +at2x("/images/case-studies/cards/gnarbox-1", jpg, 450px, 350px)
+    background-size: cover !important
+  &.gnarbox-2
+    background: center center no-repeat image-url("case-studies/cards/gnarbox-2.jpg")
+    +at2x("/images/case-studies/cards/gnarbox-2", jpg, 450px, 350px)
+    background-size: cover !important
   &.cabify
     background: center center no-repeat image-url("case-studies/cards/cabify.jpg")
     +at2x("/images/case-studies/cards/cabify", jpg, 450px, 350px)
-    background-size: cover !important
-  &.gnarbox
-    background: center center no-repeat image-url("case-studies/cards/gnarbox.jpg")
-    +at2x("/images/case-studies/cards/gnarbox", jpg, 450px, 350px)
     background-size: cover !important
   &.accent
     background: center center no-repeat image-url("case-studies/cards/accent.png")
