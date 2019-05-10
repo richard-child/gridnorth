@@ -4,7 +4,6 @@ Grid North Design is built using the [Middleman](https://middlemanapp.com) stati
 
 * Start server: `middleman`
 * Build: `middleman build`
-* Deploy to AWS: build then `middleman s3_sync`
 
 # CSS architecture
 
