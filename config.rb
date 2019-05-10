@@ -52,27 +52,10 @@ end
 # end
 
 activate :directory_indexes
-activate :dotenv, env: ".env"
 
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
-
-activate :s3_sync do |config|
-  config.bucket                     = "www.gridnorthdesign.com"
-  config.region                     = "us-east-1"
-  config.aws_access_key_id          = ENV["GRIDNORTH_AWS_ACCESS_KEY"]
-  config.aws_secret_access_key      = ENV["GRIDNORTH_AWS_ACCESS_SECRET"]
-  config.delete                     = true
-  config.after_build                = false
-  config.prefer_gzip                = true
-  config.reduced_redundancy_storage = false
-  config.acl                        = "public-read"
-  config.encryption                 = false
-  config.version_bucket             = false
-  config.index_document             = "index.html"
-  config.error_document             = "404/index.html"
-end
 
 # Build-specific configuration
 configure :build do
