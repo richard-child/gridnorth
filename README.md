@@ -7,7 +7,7 @@ Grid North Design is built using the [Middleman](https://middlemanapp.com) stati
 
 # CSS architecture
 
-The CSS for Grid North Design is based on the Inverted Triangle CSS (ITCSS) architecture. ITCSS involves visualising your CSS project as a layered upside-down triangle.
+The CSS is based on the Inverted Triangle CSS (ITCSS) architecture. ITCSS involves visualising your CSS project as a layered upside-down triangle.
 
 *The following information is taken directly from the ITCSS Net magazine article by Harry Roberts.*
 
@@ -68,5 +68,3 @@ Example:
 _settings.global.sass
 
 Each CSS file should be kept as small as possible, with each one containing only as much CSS as it needs to fulfil its role.
-
-*Fun fact: Hillary Clinton uses ITCSS, and the Trumps layer was officially renamed to "Utilities" because of Donald Trump.*
