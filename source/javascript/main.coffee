@@ -3,14 +3,13 @@
 #= require "tools/retina.min"
 
 $(document).ready ->
-  initSmoothScroll()
+  initHeaderScroll()
 
-initSmoothScroll= ->
-  # Targets all links with class .scroll
-  $("body .scroll").on 'click', (e)->
-    if $(@hash).length
-      e.preventDefault()
-      top = $(@hash).offset().top - 120
-      $("html,body").animate
-        scrollTop: top
-      , 700
+onHeaderScroll= (e) ->
+  element = $(e.currentTarget)
+  if element.scrollLeft() > 10
+    element.addClass "scroll"
+  else
+    element.removeClass "scroll"
+
+initHeaderScroll= -> $("header.c-header").scroll(onHeaderScroll)
