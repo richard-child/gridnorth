@@ -29,12 +29,25 @@
     img
       width: 98px
 
-  .c-header__nav
+  .c-header__navigation
     ul
-      font-size: 17px
+      font-size: 16px
       list-style-type: none
       margin: 0
       padding: 0
       li
-        margin: 24px 30px 0 0
+        margin: 23px 30px 0 0
         display: inline-block
+        a
+          &:link, &:visited, &:active
+            color: $header-navigation-link
+            text-transform: uppercase
+            padding-bottom: 2px
+            +transition(border-bottom 0.05s ease-out)
+            &.selected
+              color: $header-navigation-link-selected
+              border-bottom: 3px solid $header-navigation-link-border
+          &:hover, &:focus
+            color: $header-navigation-link-hover
+            @media (hover: hover)
+              border-bottom: 3px solid $header-navigation-link-border

@@ -9,20 +9,20 @@
           newLogo = logos[Math.floor(Math.random() * logos.length)];
         logo.attr("src", newLogo);
 
-    %nav.c-header__nav
+    %nav.c-header__navigation
       %ul
         %li
           %a{href: "/", class: page_classes.include?("index") ? "selected" : ""}
             Home
         %li
-          %a{href: "/articles", class: page_classes.include?("articles") ? "selected" : ""}
+          %a{href: "/projects", class: page_classes.include?("projects") ? "selected" : ""}
             Projects
         %li
           %a{href: "/articles", class: page_classes.include?("articles") ? "selected" : ""}
             Articles
         %li
-          %a{href: "/case-studies", class: page_classes.include?("case-studies") ? "selected" : ""}
+          %a{href: "/about", class: page_classes.include?("about") ? "selected" : ""}
             About
         %li
-          %a{href: "#", class: page_classes.include?("about") ? "selected" : ""}
+          %a{href: "#", class: page_classes.include?("contact") ? "selected" : ""}
             Contact
