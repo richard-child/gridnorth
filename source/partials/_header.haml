@@ -12,17 +12,17 @@
     %nav.c-header__navigation
       %ul
         %li
-          %a{href: "/", class: page_classes.include?("index") ? "selected" : ""}
+          %a{href: "/", class: header_nav_selected_class("index")}
             Home
         %li
-          %a{href: "/projects", class: page_classes.include?("projects") ? "selected" : ""}
+          %a{href: "/projects", class: header_nav_selected_class("projects")}
             Projects
         %li
-          %a{href: "/articles", class: page_classes.include?("articles") ? "selected" : ""}
+          %a{href: "/articles", class: header_nav_selected_class("articles")}
             Articles
         %li
-          %a{href: "/about", class: page_classes.include?("about") ? "selected" : ""}
+          %a{href: "/about", class: header_nav_selected_class("about")}
             About
         %li
-          %a{href: "#", class: page_classes.include?("contact") ? "selected" : ""}
+          %a{href: "#", class: header_nav_selected_class("contact")}
             Contact
