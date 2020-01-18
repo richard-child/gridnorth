@@ -2,10 +2,10 @@
   .container
     .c-header__gradient
     %a.c-header__logo{href: "/"}
-      %img#header-logo{src: "/images/header/logo-4.svg", alt: "Grid North Design"}/
+      %img#header-logo{src: "/images/logo-4.svg", alt: "Grid North Design"}/
       :javascript
         var logo = $("img#header-logo"),
-          logos = ["/images/header/logo-1.svg", "/images/header/logo-2.svg", "/images/header/logo-3.svg", "/images/header/logo-4.svg"],
+          logos = ["/images/logo-1.svg", "/images/logo-2.svg", "/images/logo-3.svg", "/images/logo-4.svg"],
           newLogo = logos[Math.floor(Math.random() * logos.length)];
         logo.attr("src", newLogo);
 
