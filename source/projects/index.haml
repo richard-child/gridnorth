@@ -8,17 +8,15 @@ priority: "0.8"
 
 %section
   .container
-    .row
-      .col-sm-10
-        %h2
-          Case studies
-        %p
-          I'm currently focused on mobile design, but here I've included a range of design projects that I've worked on. From web design to 3D design for the healthcare industry.
+    :markdown
+      # Projects
+      
+      I'm currently focused on mobile design, but here I've included a range of design projects that I've worked on. From web design to 3D design for the healthcare industry.
 
 %section
   .container
-    %h4.u-margin-bottom--50
-      Travel projects
+    %h3.u-margin-top--30.u-margin-bottom--50
+      Client work
     .row
       .col-sm-6
         = partial("/partials/case-study-cards/gnarbox-1")
@@ -32,8 +30,8 @@ priority: "0.8"
 
 %section
   .container
-    %h4.u-margin-bottom--50
-      Other projects
+    %h3.u-margin-top--30.u-margin-bottom--50
+      Personal projects
     .row
       .col-sm-6
         = partial("/partials/case-study-cards/kinex")
