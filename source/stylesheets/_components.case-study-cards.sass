@@ -4,7 +4,10 @@
   margin-top: 30px
   border-radius: 3px
   position: relative
+  box-shadow: $case-study-card-shadow
+  +transition(all 0.3s cubic-bezier(.25,.8,.25,1))
   &:hover
+    box-shadow: $case-study-card-shadow-hover
     .c-case-study-card__details
       small
         color: $case-study-card-details-text-hover
@@ -54,6 +57,7 @@
     background-color: $case-study-card-details-bg
     width: 100%
     padding: 15px
+    border-radius: 0 0 3px 3px
     position: absolute
     bottom: 0
     display: block

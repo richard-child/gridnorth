@@ -1,9 +1,14 @@
 .c-call-to-action
   &:link, &:visited, &:active
-    font-size: 26px
+    font-size: 20px
+    margin-top: 30px
+    padding: 10px 20px
     text-decoration: none
-    display: block
-    margin: 22px 0 0
+    display: inline-block
+    border: 4px solid $cta-border
+    border-radius: 6px
     +min-width(481px)
-      font-size: 28px
-      margin-top: 24px
+      font-size: 24px
+      margin-top: 40px
+  &:hover, &:focus
+    border-color: $cta-border-hover
