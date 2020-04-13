@@ -29,8 +29,5 @@
     = partial("/partials/javascript/head")
 
   %body{class: page_classes}
-    .page-wrapper
-      = partial("/partials/header")
-      = yield
-      .page-pusher
-    = partial("/partials/footer")
+    = partial("/partials/header")
+    = yield
