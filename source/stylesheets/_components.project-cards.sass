@@ -10,6 +10,10 @@
   +transition(border-color 0.1s ease-in)
   &:hover
     border-color: $project-card-border-hover
+    .c-project-card__details
+      span
+        color: $project-card-details-span-hover
+        // text-decoration: underline
   &.gnarbox-part-1
     background: center center no-repeat image-url("projects/cards/gnarbox-part-1.jpg")
     +at2x("/images/projects/cards/gnarbox-part-1", jpg, 450px, 350px)
