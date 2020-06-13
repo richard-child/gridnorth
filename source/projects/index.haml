@@ -16,7 +16,27 @@ priority: "0.8"
 %section
   .container
     %h2
+      Featured projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-price-alerts")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-user-research-training")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-sprint-facilitation")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-unfavourite-icon")
+
+%section
+  .container
+    %h2
       Company projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-deals-navigation")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-privacy-settings")
     .row
       .col-sm-6
         = partial("/partials/project-cards/gnarbox-part-1")

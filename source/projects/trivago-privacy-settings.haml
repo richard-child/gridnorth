@@ -1,0 +1,56 @@
+---
+title: "trivago Privacy settings | Grid North Design"
+
+description: "How a simple UI adjustment can have an impact on trust."
+
+priority: "0.6"
+---
+
+%section
+  .container
+    :markdown
+      # trivago Privacy settings
+
+      * <em>Project length</em>: Less than 1 month <em>(November 2018)</em>
+      * <em>Team</em>: 4 members (Android Engineer, iOS Engineer, Designer, QA)
+      * <em>Platform</em>: iOS and Android apps
+
+%section
+  .container
+    :markdown
+      ## Message from user support
+
+      I was browsing through one of the mobile app Slack channels, when I saw the following message posted by a team member in user support:
+
+      <q>Hello, a user doesn't want the trivago App to save his data. It's not clear if he has to put a check mark there or delete the check mark to achieve this. Honestly I asked around in our department and for us it's also not clear communicated. Could you please add one sentence there and clarify what the user has to do, when he doesn't want his data to be saved by us.</q>
+
+      This is something that should be <em>communicated through UI</em>, and not by adding an additional sentence. So I decided to advocate changing the checkmarks to on/off switches. Meaning the user doesn't need to “save” their changes, as when they toggle the switches, <em>any changes are auto-saved</em>.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-privacy-settings/ui-adjustment.jpg", alt: "Adjusting the UI to use on/off switches", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-privacy-settings/ui-adjustment@2x.jpg"}}/
+  %small.c-caption
+    On/off switches clearly indicate when a setting is active or not.
+
+%section
+  .container
+    :markdown
+      ## Conclusion
+
+      I think this is a great example of how a <em>simple UI adjustment</em> can have an impact on trust. Allowing users to feel <em>more in control of their privacy settings</em>.
+
+%section.c-more-projects
+  .container
+    %h2
+      More company projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-deals-navigation")
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-1")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-2")
+      .col-sm-6
+        = partial("/partials/project-cards/cabify")
+
+= partial("/partials/testimonials/tim-quote-1")

@@ -1,0 +1,83 @@
+---
+title: "trivago Unfavourite icon | Grid North Design"
+
+description: "Removing hotels from a list."
+
+priority: "0.6"
+---
+
+%section
+  .container
+    :markdown
+      # trivago Unfavourite icon
+
+      * <em>Project length</em>: Less than 1 month <em>(June 2017)</em>
+      * <em>Team</em>: 2 members (User Researcher, Designer)
+      * <em>Platform</em>: Android app
+
+%section
+  .container
+    :markdown
+      ## Hotel lists
+
+      I joined trivago in January 2017, and <em>one of my first projects was working on hotel lists</em>. trivago is an accommodation metasearch, and one of the problems users face is narrowing down/comparing their list of results. <em>Hotel lists allow users to save their favourite hotels</em>, so they can compare just a handful of results.
+
+      Hotels are added to a list by tapping on a heart icon. But I was unsure on how to best convey how to remove a hotel from a list. A common pattern in other products is that you tap on the heart icon again to remove it. <em>But is that clear to users?</em> I wanted to test it.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-unfavourite-icon/versions-tested.jpg", alt: "Versions tested", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-unfavourite-icon/versions-tested@2x.jpg"}}/
+  %small.c-caption
+    Two out of the three versions tested.
+
+%section
+  .container
+    :markdown
+      ## First-click test
+
+      At the time, I hadn't launched a user test before, so I reached out to a member of the user research team to help me set one up. I was introduced to the <em>first-click test</em>, writing a scenario, and the data points we'd get back from the test. I mocked up three icon variations:
+
+      1. <em>Heart only</em> icon
+      2. <em>“X” only</em> icon
+      3. <em>Combined heart and “X”</em> icon
+
+      With the idea being that the “X” helps to signify that you're removing a hotel from the list. Something else I learnt was that it's important to have <em>all three variations be exactly the same</em>, except for the difference that you're testing. So I made sure the screens were identical, except for the different icon.
+
+      <em>More errors were made with the heart only icon</em>, and it also took participants longer to complete the task. <em>Both icon variations that included the “X” were clearest</em>, with 20/20 participants understanding how to remove a hotel from the list.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-unfavourite-icon/user-test-results.jpg", alt: "User test results", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-unfavourite-icon/user-test-results@2x.jpg"}}/
+  %small.c-caption
+    The version on the right (heart with “X” icon) performed strongest, with 20/20 participants successfully completing the task.
+
+%section
+  .container
+    :markdown
+      ## Prototyping the interaction
+
+      Using the findings from the test, I prototyped the interaction of <em>unfavouriting a hotel from a list</em>.
+
+%section.c-project-media
+  .c-project-media__iframe
+    <iframe src="https://player.vimeo.com/video/422086465?transparent=0&title=0&byline=0&portrait=0" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+%section
+  .container
+    :markdown
+      ## Conclusion
+
+      Although this was a relatively simple test, it's one that's very memorable for me, because it was my first introduction to usability testing. I learnt how to setup a first-click test, <em>the importance of a well-worded scenario and task</em>, and how to structure and write-up the findings.
+
+%section.c-more-projects
+  .container
+    %h2
+      More featured projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-price-alerts")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-user-research-training")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-sprint-facilitation")
+
+= partial("/partials/testimonials/laura-quote")

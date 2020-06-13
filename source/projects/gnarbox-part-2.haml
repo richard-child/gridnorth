@@ -28,50 +28,30 @@ priority: "0.6"
 %section
   .container
     :markdown
-      ## Applying filters
+      ## Applying filters and cropping photos
 
       The app also comes with preset filters, for customers who want to quickly make edits <em>without having to spend time manually adjusting colour settings</em>.
-
-%section.c-project-media
-  %img{src: "/images/projects/gnarbox/applying-filters.jpg", alt: "Applying filters", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/applying-filters@2x.jpg"}}/
-  %small.c-caption
-    The app comes with preset filters.
-
-%section
-  .container
-    :markdown
-      ## Cropping photos
 
       You can crop, rotate and set the aspect ratio all from one screen. Incremental rotations are also available using the default iOS rotator.
 
 %section.c-project-media
-  %img{src: "/images/projects/gnarbox/cropping-photos.jpg", alt: "Cropping photos", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/cropping-photos@2x.jpg"}}/
+  %img{src: "/images/projects/gnarbox/applying-filters.jpg", alt: "Applying filters and cropping photos", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/applying-filters@2x.jpg"}}/
   %small.c-caption
-    Crop and rotate your photos.
+    The app comes with preset filters, and you can crop/rotate your photos.
 
 %section
   .container
     :markdown
-      ## Trimming videos
+      ## Trimming videos and exporting frames
 
       The slow-mo and video trim elements follow the default iOS style, so they’ll be <em>familiar to customers</em>. To save space, we added overlay elements to the video, where you can set the slow-mo speed.
-
-%section.c-project-media
-  %img{src: "/images/projects/gnarbox/trimming-videos.jpg", alt: "Trimming videos", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/trimming-videos@2x.jpg"}}/
-  %small.c-caption
-    Trim down your videos or reduce the speed.
-
-%section
-  .container
-    :markdown
-      ## Exporting frames
 
       Customers can export individual video frames as photos right within the app. Perfect for capturing stills if you’re only shooting video.
 
 %section.c-project-media
-  %img{src: "/images/projects/gnarbox/exporting-frames.jpg", alt: "Exporting frames", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/exporting-frames@2x.jpg"}}/
+  %img{src: "/images/projects/gnarbox/trimming-videos.jpg", alt: "Trimming videos and exporting frames", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/trimming-videos@2x.jpg"}}/
   %small.c-caption
-    Export individual video frames as photos.
+    Trim down your videos and export individual frames as photos.
 
 %section
   .container
@@ -89,6 +69,11 @@ priority: "0.6"
   .container
     %h2
       More company projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-deals-navigation")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-privacy-settings")
     .row
       .col-sm-6
         = partial("/partials/project-cards/gnarbox-part-1")

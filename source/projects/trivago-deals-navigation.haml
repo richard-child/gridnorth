@@ -1,0 +1,84 @@
+---
+title: "trivago Deals navigation | Grid North Design"
+
+description: "Launching a followup usability test."
+
+priority: "0.6"
+---
+
+%section
+  .container
+    :markdown
+      # trivago Deals navigation
+
+      * <em>Project length</em>: Less than 1 month <em>(April 2019)</em>
+      * <em>Team</em>: 1 Designer
+      * <em>Platform</em>: iOS app
+
+%section
+  .container
+    :markdown
+      ## Visiting a partner website
+
+      In the trivago iOS app, the final step of the flow is for the user to “clickout”, and visit the partner website to book their  hotel.
+
+      The partner website is presented in a browser within the trivago app. This means that, <em>for the user to navigate back, they simply need to tap the back button</em> in the top left of the screen. But, as it's a browser, there are also browser back/forward buttons displayed on the same screen.
+
+      <em>Having multiple back/forward buttons on the same screen is confusing</em>. So we decided to A/B test presenting the browser view modally, with a close button instead of a back button. But after A/B testing the change, <em>there was a significant drop in users “clicking out” and browsing different hotel prices</em>.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-deals-navigation/versions-tested.jpg", alt: "Versions tested", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-deals-navigation/versions-tested@2x.jpg"}}/
+  %small.c-caption
+    Two out of the five versions tested.
+
+%section
+  .container
+    :markdown
+      ## Launching a usability test
+
+      As a followup to the A/B test, I decided to run a usability test to try and <em>better understand why there was a significant drop in clickouts</em>. I also saw this is a learning opportunity to setup and launch my own test.
+
+      I decided to use the “Navigation test” on UsabilityHub, because I wanted to simulate the following scenario:
+
+      1. The user sees a list of prices for for their chosen hotel.
+      2. The user “clicks out” on the Hotels.com price, opening the partner website within the browser view.
+      3. The user wants to <em>navigate back to the list of prices</em>, so they can explore other offers.
+
+      I would see what percentage of users would <em>successfully know how to navigate back</em> to the list of prices. Five variations were tested:
+
+      1. Back icon, positioned on the <em>left</em> of the screen.
+      2. Close icon, positioned on the <em>left</em> of the screen.
+      3. “Close” text, positioned on the <em>left</em> of the screen.
+      4. Close icon, positioned on the <em>right</em> of the screen.
+      5. “Close” text, positioned on the <em>right</em> of the screen.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-deals-navigation/user-test-results.jpg", alt: "User test results", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-deals-navigation/user-test-results@2x.jpg"}}/
+  %small.c-caption
+    The version on the left (back icon) performed strongest, with 19/40 participants successfully completing the task.
+
+%section
+  .container
+    :markdown
+      ## Conclusion
+
+      Even though I tested multiple variations for “Close”, on the left and right of the screen, the back icon still performed strongest. <em>With 19/40 participants successfully completing the task</em>.
+
+      The <em>back button at the bottom of the screen</em>, as well as the <em>back button displayed on the Hotels.com website</em>, proved to be the main cause of incorrect clicks. And our initial assumption, that “Close” would be clearer, wasn't correct.
+
+%section.c-more-projects
+  .container
+    %h2
+      More company projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-privacy-settings")
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-1")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-2")
+      .col-sm-6
+        = partial("/partials/project-cards/cabify")
+
+= partial("/partials/testimonials/laura-quote")

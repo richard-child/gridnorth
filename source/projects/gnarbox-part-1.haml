@@ -15,7 +15,7 @@ priority: "0.6"
 
 %section.c-project-media
   .c-project-media__iframe
-    <iframe src="https://player.vimeo.com/video/133610334?title=0&byline=0&portrait=0" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/422094369?transparent=0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 %section
   .container
@@ -59,7 +59,7 @@ priority: "0.6"
 %section
   .container
     :markdown
-      ## Recents & favourites
+      ## Recents and favourites
 
       If you import a file into GNARBOX that was created in 2005, then it’ll be added towards the bottom of the timeline. Which is obviously a problem. We added a section called “Recently imported”, which organises files based on their import date. So you can <em>easily access the content you’re looking for</em>, no matter when the file was created. There’s also a “Favorites” section, allowing customers to quickly access the content they treasure the most.
 
@@ -87,34 +87,29 @@ priority: "0.6"
 
       GNARBOX automatically adds location data to imported files, so you can <em>filter content based on keywords, location, date, and file type</em>.
 
-%section.c-project-media
-  %img{src: "/images/projects/gnarbox/search.jpg", alt: "Search", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/search@2x.jpg"}}/
-  %small.c-caption
-    Easily find the files you're looking for.
-
-%section
-  .container
-    :markdown
-      ## Night mode
-
       Love editing your footage late into the night? We designed night mode so the app’s interface reduces screen brightness when it gets dark.
 
 %section.c-project-media
-  %img{src: "/images/projects/gnarbox/night-mode.jpg", alt: "Night mode", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/night-mode@2x.jpg"}}/
+  %img{src: "/images/projects/gnarbox/search.jpg", alt: "Search", data: {at2x: "https://www.gridnorthdesign.com/images/projects/gnarbox/search@2x.jpg"}}/
   %small.c-caption
-    Night mode is perfect for editing footage in the evening.
+    Easily find the files you're looking for, and dark mode is perfect for editing footage in the evening.
 
 %section
   .container
     :markdown
-      ## Android design
+      ## Dark mode
 
-      The app was designed for Android according to Google's Material Design guidelines. When you have an app available for multiple platforms, it's important to <em>customise the design for each operating system</em>, using elements that your customers will be familiar with.
+      Love editing your footage late into the night? We designed dark mode so the app’s interface <em>reduces screen brightness when it gets dark</em>.
 
 %section.c-more-projects
   .container
     %h2
       More company projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-deals-navigation")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-privacy-settings")
     .row
       .col-sm-6
         = partial("/partials/project-cards/gnarbox-part-2")

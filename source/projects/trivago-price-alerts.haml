@@ -1,0 +1,93 @@
+---
+title: "trivago Price alerts | Grid North Design"
+
+description: "Notifying users when hotel prices drop."
+
+priority: "0.6"
+---
+
+%section
+  .container
+    :markdown
+      # trivago Price alerts
+
+      * <em>Project length</em>: Less than 1 month <em>(November 2019)</em>
+      * <em>Team</em>: 5 members (Android Engineer, Designer, UX Writer, Product Manager, QA)
+      * <em>Platform</em>: Android app
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-price-alerts/hotel-price-alert.jpg", alt: "Hotel price alert", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-price-alerts/hotel-price-alert@2x.jpg"}}/
+  %small.c-caption
+    The original notification copy was written by UX Writer, Joy Kordts.
+
+%section
+  .container
+    :markdown
+      ## Original notification copy
+
+      In the later half of 2019, trivago started working on app price alerts. As a way to strengthen its position in price comparison. Users are notified when hotel prices drop, and <em>the original notification copy was written by UX Writer, Joy Kordts</em>:
+
+      <em>Price Alert for BEI Hotel San Francisco<br>
+      We've detected a 20% drop in price!<br>
+      It's a great time to book: we kept an eye on this place and caught a drop in price for stays from Oct 30 to Oct 31.</em>
+
+      In additional to this notification, we also wanted to test two more variations:
+
+      1. Hotel price alerts, including a photo of the hotel.
+      2. Destination price alerts, when the average hotel price has dropped for a specific location.
+
+      Based on the original notification by Joy, I worked on the copy for the other two variations. Using the <em>"front-loading" writing technique, where the important information is provided first</em>.
+
+%section
+  .container
+    :markdown
+      ## Hotel price alert with image
+
+      In Android, notifications that include images can only have a two-lines of text: a one-line heading, and one-line of additional text to support the heading. Because the copy truncates, <em>the price drop amount and dates are shown at the beginning of the sentence</em>:
+
+      <em>20% price drop for De L'Europe Amsterdam - The Leading Hotels of the World<br>
+      For stays from Oct 30 to Oct 31.</em>
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-price-alerts/hotel-price-alert-image.jpg", alt: "Hotel price alert with image", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-price-alerts/hotel-price-alert-image@2x.jpg"}}/
+  %small.c-caption
+    Key information is shown first, so if the text is truncated it's still visible to the user.
+
+%section
+  .container
+    :markdown
+      ## Destination price alert
+
+      <em>20% price drop for stays in Amsterdam<br>
+      Accommodation in Amsterdam: the average price has dropped 20%, for stays from Oct 30 to Oct 31.</em>
+
+      For the heading, there's a chance that “Amsterdam” will be hidden to the user due to truncation. So on the very next line, “Accommodation in Amsterdam” is shown first. <em>So the key message is still communicated</em>.
+
+%section.c-project-media
+  %img{src: "/images/projects/trivago-price-alerts/destination-price-alert.jpg", alt: "Destination price alert", data: {at2x: "https://www.gridnorthdesign.com/images/projects/trivago-price-alerts/destination-price-alert@2x.jpg"}}/
+  %small.c-caption
+    The name of the destination is still clearly communicated, even if the header is truncated.
+
+%section
+  .container
+    :markdown
+      ## Conclusion
+
+      I had previously taken an internal UX Writing workshop from Joy Kordts, so as a followup I wanted to work on a copy-specific task.
+
+      I found it challenging to write with the constraints of character limit, but the same constraints were also helpful. <em>I think the task would have been harder if there were no restrictions in terms of format</em>.
+
+%section.c-more-projects
+  .container
+    %h2
+      More featured projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-user-research-training")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-sprint-facilitation")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-unfavourite-icon")
+
+= partial("/partials/testimonials/nathan-quote")
