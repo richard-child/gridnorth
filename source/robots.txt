@@ -2,4 +2,4 @@
 # https://code.google.com/web/controlcrawlindex
 
 User-agent: *
-Sitemap: https://www.gridnorthdesign.com/sitemap.xml
+Sitemap: https://gridnorthdesign.com/sitemap.xml
