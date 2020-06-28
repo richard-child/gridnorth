@@ -18,13 +18,43 @@ priority: "0.6"
 %section
   .container
     :markdown
-      ## Visiting a partner website
+      ## Booking a hotel
 
-      In the trivago iOS app, the final step of the flow is for the user to “clickout”, and visit the partner website to book their  hotel.
+      In the trivago app, the final step of the flow is for the user to visit the partner website (for example, Hotels.com) to book their hotel.
 
-      The partner website is presented in a browser within the trivago app. This means that, <em>for the user to navigate back, they simply need to tap the back button</em> in the top left of the screen. But, as it's a browser, there are also browser back/forward buttons displayed on the same screen.
+      The partner website is presented in a browser within the trivago app. This means that, for the user to navigate back to trivago, they simply need to tap the back button in the top left of the screen.
 
-      <em>Having multiple back/forward buttons on the same screen is confusing</em>. So we decided to A/B test presenting the browser view modally, with a close button instead of a back button. But after A/B testing the change, <em>there was a significant drop in users “clicking out” and browsing different hotel prices</em>.
+%section.c-project-media
+  .c-project-media__iframe
+    <iframe src="https://player.vimeo.com/video/422086465?transparent=0&title=0&byline=0&portrait=0" width="640" height="1138" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  %small.c-caption
+    Navigating between different partner websites, such as Hotels.com, within the trivago app.
+
+%section
+  .container
+    :markdown
+      ## Multiple back/forward buttons are confusing
+
+      As it's a browser, there are also browser back/forward buttons displayed at the bottom of the screen. Having multiple back/forward buttons on the same screen is confusing. So we decided to A/B test presenting the browser view with a close button instead of a back button. To try and reduce confusion.
+
+      But after A/B testing the change, there was a significant drop in users visiting different partner websites.
+
+%section
+  .container
+    :markdown
+      ## Launching a usability test
+
+      As a followup to the A/B test, I decided to run a usability test to try and better understand why there was a significant drop. I also saw this is a learning opportunity to setup and launch my own test.
+
+      I decided to use the “Navigation test” on UsabilityHub, because I wanted to simulate a realistic scenario of a user navigating between different partner websites. To compare offers.
+
+      I would see what percentage of users would successfully know how to navigate back to trivago. Five variations were tested:
+
+      1. Back icon, positioned on the <em>left</em> of the screen.
+      2. Close icon, positioned on the <em>left</em> of the screen.
+      3. “Close” text, positioned on the <em>left</em> of the screen.
+      4. Close icon, positioned on the <em>right</em> of the screen.
+      5. “Close” text, positioned on the <em>right</em> of the screen.
 
 %section.c-project-media
   %img{src: "/images/projects/trivago-deals-navigation/versions-tested.jpg", alt: "Versions tested", data: {at2x: "https://gridnorthdesign.com/images/projects/trivago-deals-navigation/versions-tested@2x.jpg"}}/
@@ -34,37 +64,14 @@ priority: "0.6"
 %section
   .container
     :markdown
-      ## Launching a usability test
+      ## Conclusion
 
-      As a followup to the A/B test, I decided to run a usability test to try and <em>better understand why there was a significant drop in clickouts</em>. I also saw this is a learning opportunity to setup and launch my own test.
-
-      I decided to use the “Navigation test” on UsabilityHub, because I wanted to simulate the following scenario:
-
-      1. The user sees a list of prices for for their chosen hotel.
-      2. The user “clicks out” on the Hotels.com price, opening the partner website within the browser view.
-      3. The user wants to <em>navigate back to the list of prices</em>, so they can explore other offers.
-
-      I would see what percentage of users would <em>successfully know how to navigate back</em> to the list of prices. Five variations were tested:
-
-      1. Back icon, positioned on the <em>left</em> of the screen.
-      2. Close icon, positioned on the <em>left</em> of the screen.
-      3. “Close” text, positioned on the <em>left</em> of the screen.
-      4. Close icon, positioned on the <em>right</em> of the screen.
-      5. “Close” text, positioned on the <em>right</em> of the screen.
+      Even though I tested multiple variations for “Close”, the back icon still performed strongest. With 19/40 participants successfully completing the task. Our initial assumption, that “Close” would be clearer, <em>wasn't</em> correct.
 
 %section.c-project-media
   %img{src: "/images/projects/trivago-deals-navigation/user-test-results.jpg", alt: "User test results", data: {at2x: "https://gridnorthdesign.com/images/projects/trivago-deals-navigation/user-test-results@2x.jpg"}}/
   %small.c-caption
-    The version on the left (back icon) performed strongest, with 19/40 participants successfully completing the task.
-
-%section
-  .container
-    :markdown
-      ## Conclusion
-
-      Even though I tested multiple variations for “Close”, on the left and right of the screen, the back icon still performed strongest. <em>With 19/40 participants successfully completing the task</em>.
-
-      The <em>back button at the bottom of the screen</em>, as well as the <em>back button displayed on the Hotels.com website</em>, proved to be the main cause of incorrect clicks. And our initial assumption, that “Close” would be clearer, wasn't correct.
+    The back icon, on the left, performed strongest.
 
 %section.c-more-projects
   .container
