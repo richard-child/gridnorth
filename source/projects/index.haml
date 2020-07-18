@@ -14,7 +14,12 @@ priority: "0.8"
 %section
   .container
     %h2
-      Featured projects
+      Company projects
+    .row
+      .col-sm-12
+        = partial("/partials/project-cards/trivago-app-redesign")
+    %h3
+      <em>Most recent</em> company projects
     .row
       .col-sm-6
         = partial("/partials/project-cards/trivago-price-alerts")
@@ -24,17 +29,14 @@ priority: "0.8"
       .col-sm-6
         = partial("/partials/project-cards/trivago-sprint-facilitation")
       .col-sm-6
-        = partial("/partials/project-cards/trivago-unfavourite-icon")
-
-%section
-  .container
-    %h2
-      Company projects
+        = partial("/partials/project-cards/trivago-deals-navigation")
     .row
       .col-sm-6
-        = partial("/partials/project-cards/trivago-deals-navigation")
-      .col-sm-6
         = partial("/partials/project-cards/trivago-privacy-settings")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-unfavourite-icon")
+    %h3
+      <em>Past</em> company projects
     .row
       .col-sm-6
         = partial("/partials/project-cards/gnarbox-part-1")
@@ -49,6 +51,9 @@ priority: "0.8"
     %h2
       Personal projects
     .row
+      .col-sm-12
+        = partial("/partials/project-cards/kinex")
+    .row
       .col-sm-6
         = partial("/partials/project-cards/richard-writes")
       .col-sm-6
@@ -56,7 +61,5 @@ priority: "0.8"
     .row
       .col-sm-6
         = partial("/partials/project-cards/sketch-tricks")
-      .col-sm-6
-        = partial("/partials/project-cards/kinex")
 
 = partial("/partials/testimonials/nathan-quote")

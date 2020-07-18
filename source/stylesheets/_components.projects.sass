@@ -36,8 +36,6 @@
     margin-top: 150px
   h2
     margin-bottom: 50px
-    +min-width(481px)
-      margin-bottom: 50px
 
 /**
  * Project cards
@@ -45,7 +43,7 @@
 
 .c-project-card
   width: 100%
-  height: 280px
+  height: 320px
   margin-top: 30px
   border-radius: 6px
   overflow: hidden
@@ -53,68 +51,75 @@
   box-shadow: $project-card-shadow
   border: 1px solid $project-card-border
   +transition(border-color 0.1s ease-in)
+  +min-width(768px)
+    height: 280px
+  &.featured
+    +min-width(768px)
+      height: 360px
   &:hover
     border-color: $project-card-border-hover
     .c-project-card__details
       span
         color: $project-card-details-span-hover
 
-  // Featured projects
+  // Company projects
+  &.trivago-app-redesign
+    background: center center no-repeat image-url("projects/cards/trivago-app-redesign.jpg")
+    +at2x("/images/projects/cards/trivago-app-redesign", jpg, 700px, 550px)
+    background-size: cover !important
   &.trivago-price-alerts
     background: left top no-repeat image-url("projects/cards/trivago-price-alerts.jpg")
-    +at2x("/images/projects/cards/trivago-price-alerts", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/trivago-price-alerts", jpg, 700px, 550px)
     background-size: cover !important
   &.trivago-user-research-training
     background: left top no-repeat image-url("projects/cards/trivago-user-research-training.jpg")
-    +at2x("/images/projects/cards/trivago-user-research-training", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/trivago-user-research-training", jpg, 700px, 550px)
     background-size: cover !important
   &.trivago-sprint-facilitation
     background: center center no-repeat image-url("projects/cards/trivago-sprint-facilitation.jpg")
-    +at2x("/images/projects/cards/trivago-sprint-facilitation", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/trivago-sprint-facilitation", jpg, 700px, 550px)
     background-size: cover !important
-  &.trivago-unfavourite-icon
-    background: right top no-repeat image-url("projects/cards/trivago-unfavourite-icon.jpg")
-    +at2x("/images/projects/cards/trivago-unfavourite-icon", jpg, 450px, 350px)
-    background-size: cover !important
-
-  // Company projects
   &.trivago-deals-navigation
     background: left top no-repeat image-url("projects/cards/trivago-deals-navigation.jpg")
-    +at2x("/images/projects/cards/trivago-deals-navigation", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/trivago-deals-navigation", jpg, 700px, 550px)
     background-size: cover !important
   &.trivago-privacy-settings
     background: left top no-repeat image-url("projects/cards/trivago-privacy-settings.jpg")
-    +at2x("/images/projects/cards/trivago-privacy-settings", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/trivago-privacy-settings", jpg, 700px, 550px)
+    background-size: cover !important
+  &.trivago-unfavourite-icon
+    background: right top no-repeat image-url("projects/cards/trivago-unfavourite-icon.jpg")
+    +at2x("/images/projects/cards/trivago-unfavourite-icon", jpg, 700px, 550px)
     background-size: cover !important
   &.gnarbox-part-1
     background: right top no-repeat image-url("projects/cards/gnarbox-part-1.jpg")
-    +at2x("/images/projects/cards/gnarbox-part-1", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/gnarbox-part-1", jpg, 700px, 550px)
     background-size: cover !important
   &.gnarbox-part-2
     background: center center no-repeat image-url("projects/cards/gnarbox-part-2.jpg")
-    +at2x("/images/projects/cards/gnarbox-part-2", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/gnarbox-part-2", jpg, 700px, 550px)
     background-size: cover !important
   &.cabify
     background: left top no-repeat image-url("projects/cards/cabify.jpg")
-    +at2x("/images/projects/cards/cabify", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/cabify", jpg, 700px, 550px)
     background-size: cover !important
 
   // Personal projects
+  &.kinex
+    background: center top no-repeat image-url("projects/cards/kinex.jpg")
+    +at2x("/images/projects/cards/kinex", jpg, 700px, 550px)
+    background-size: cover !important
   &.richard-writes
     background: left top no-repeat image-url("projects/cards/richard-writes.jpg")
-    +at2x("/images/projects/cards/richard-writes", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/richard-writes", jpg, 700px, 550px)
     background-size: cover !important
   &.sketch-to-html
     background: left top no-repeat image-url("projects/cards/sketch-to-html.jpg")
-    +at2x("/images/projects/cards/sketch-to-html", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/sketch-to-html", jpg, 700px, 550px)
     background-size: cover !important
   &.sketch-tricks
     background: center center no-repeat image-url("projects/cards/sketch-tricks.jpg")
-    +at2x("/images/projects/cards/sketch-tricks", jpg, 450px, 350px)
-    background-size: cover !important
-  &.kinex
-    background: center top no-repeat image-url("projects/cards/kinex.jpg")
-    +at2x("/images/projects/cards/kinex", jpg, 450px, 350px)
+    +at2x("/images/projects/cards/sketch-tricks", jpg, 700px, 550px)
     background-size: cover !important
 
   .c-project-card__link
@@ -145,10 +150,10 @@
 section
   .row:nth-of-type(1)
     +max-width(767px)
-      .col-sm-6:nth-of-type(1)
+      .col-sm-6:nth-of-type(1), .col-sm-12
         .c-project-card
           margin-top: 0
     +min-width(768px)
-      .col-sm-6
+      .col-sm-6, .col-sm-12
         .c-project-card
           margin-top: 0
