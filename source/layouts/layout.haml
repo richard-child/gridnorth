@@ -26,8 +26,10 @@
 
     = stylesheet_link_tag "main"
     = partial("/partials/javascript/head")
-    = javascript_include_tag "main"
 
   %body{class: page_classes}
     = partial("/partials/header")
-    = yield
+    %main
+      = yield
+
+    = javascript_include_tag "main"
