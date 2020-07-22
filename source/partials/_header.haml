@@ -4,10 +4,10 @@
     %a.c-header__logo{href: "/"}
       %img#header-logo{src: "", alt: "Grid North Design", "data-no-retina" => ""}/
       :javascript
-        var logo = $("img#header-logo"),
-          logos = ["/images/header/logo-1.svg", "/images/header/logo-2.svg", "/images/header/logo-3.svg", "/images/header/logo-4.svg", "/images/header/logo-5.svg", "/images/header/logo-6.svg"],
-          newLogo = logos[Math.floor(Math.random() * logos.length)];
-        logo.attr("src", newLogo);
+        var logo = document.querySelector("img#header-logo");
+        var logos = ["/images/header/logo-1.svg", "/images/header/logo-2.svg", "/images/header/logo-3.svg", "/images/header/logo-4.svg", "/images/header/logo-5.svg", "/images/header/logo-6.svg"];
+        var newLogo = logos[Math.floor(Math.random() * logos.length)];
+        logo.setAttribute("src", newLogo);
 
     %nav.c-header__nav
       %ul
