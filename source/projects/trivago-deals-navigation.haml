@@ -20,7 +20,7 @@ priority: "0.6"
     :markdown
       ## Booking a hotel
 
-      In the trivago app, the final step of the flow is for the user to visit the partner website (for example, Hotels.com) to book their hotel.
+      In the trivago app, the final step of the flow is for the user to visit the partner website (for example, Hotels.com) to book their hotel. Known internally as a “clickout”.
 
       The partner website is presented in a browser within the trivago app. This means that, for the user to navigate back to trivago, they simply need to tap the back button in the top left of the screen.
 
@@ -39,7 +39,7 @@ priority: "0.6"
 
       As it's a browser, there are also browser back/forward buttons displayed at the bottom of the screen. Having multiple back/forward buttons on the same screen is confusing. So we decided to A/B test presenting the browser view with a close button instead of a back button. To try and reduce confusion.
 
-      But after A/B testing the change, there was a significant drop in users visiting different partner websites.
+      But after A/B testing the change, there was a significant drop in users clicking out, and visiting different partner websites.
 
 %section
   .container
@@ -48,7 +48,7 @@ priority: "0.6"
 
       As a followup to the A/B test, I decided to run a usability test to try and better understand why there was a significant drop. I also saw this is a learning opportunity to setup and launch my own test.
 
-      I decided to use the “Navigation test” on UsabilityHub, because I wanted to simulate a realistic scenario of a user navigating between different partner websites. To compare offers.
+      I decided to use the “Navigation test” on UsabilityHub, because I wanted to simulate a realistic scenario of a user comparing offers between different partner websites.
 
       I would see what percentage of users would successfully know how to navigate back to trivago. Five variations were tested:
 

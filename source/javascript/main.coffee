@@ -1,4 +1,5 @@
-#= require "tools/retina.min"
+#= require "jquery"
+#= require "retina.min"
 
 $(document).ready ->
   initHeaderScroll()
