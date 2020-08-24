@@ -11,44 +11,44 @@ priority: "0.6"
     :markdown
       # trivago App redesign
 
-      * <em>Project length</em>: 4 months <em>(Aug - Nov 2017)</em>
-      * <em>Entire apps team</em>: 30 members (4 Designers, 5 Project Managers, Apps Team Lead, 8 iOS engineers, 7 Android engineers, 5 QA)
-      * <em>Platform</em>: iOS and Android apps
+      * Project length: 4 months <em>(Aug - Nov 2017)</em>
+      * Entire apps team: 30 members (4 Designers, 5 Project Managers, Apps Team Lead, 8 iOS Engineers, 7 Android Engineers, 5 QA)
+      * Platform: iOS and Android apps
 
 %section
   .container
     :markdown
       ## trivago's business model
 
-      trivago is a metasearch for accommodation, focusing on helping the user find the right hotel at a great price. The business model is cost per click. So instead of booking on trivago, online travel agencies, hotel chains and independent hotels pay trivago for referring users to their booking site. And the benefit to the user is that they can see a range of prices from different providers.
+      trivago is a metasearch for accommodation, focusing on helping the user find the right hotel at a great price. The business model is cost per click. So instead of booking on trivago, online travel agencies, hotel chains, and independent hotels pay trivago for referring users to their site. And the benefit to the user is that they can see a range of prices from different providers.
 
 %section
   .container
     :markdown
       ## Problems with the previous app
 
-      We set out to solve two core problems with the existing app:
+      We set out to solve two core problems with the previous app:
 
       ### 1. Users weren’t learning about the details of a hotel on trivago
 
-      When you search for a hotel, you enter a destination, dates, and then you get a list of results. You might see a few hotels that looks interesting to you. With the previous app, users would then click to leave trivago, and they would get redirected to a partner website. Such as Expedia.
+      When you search for a hotel, you enter a destination, dates, and then you get a list of results. You might see a few hotels that looks interesting to you. With the previous app, users would then click to leave trivago, and they would get redirected to a partner website (for example, Expedia).
 
-      Expedia would pay for that click, but because the user doesn’t know all the details of what the hotel offers. It might not be right for them, so they won’t book. Which firstly isn’t a good user experience. But secondly, this also isn’t good for our partners. Because they’re looking for high-quality referrals that lead to bookings.
+      Expedia would pay for that click. But, because the user doesn’t know all the hotel details, it might not be right for them. So they won’t book. Which firstly isn’t a good user experience. But, secondly, this also isn’t good for our partners. Because they’re looking for high-quality referrals that lead to bookings.
 
       ### 2. The app followed the mobile web
 
-      At the time the apps were very similar to the mobile website. Meaning that the apps weren’t taking advantage of the full app capability that both the iOS and Android platforms offer. But, more importantly, why download an app when you can just visit trivago.com in your browser?
+      At the time the apps were very similar to the mobile website. Meaning that they weren’t taking advantage of the full capability that both the iOS and Android platforms offer. Why download an app when you can just visit trivago.com in your browser?
 
 %section
   .container
     :markdown
       ## Goal of the redesign
 
-      We set out to solve two core problems with the existing app:
+      With these problems in mind, the goal of the redesign was to:
 
       ### 1. Increase business value depth
 
-      Provide a flow that allows users to decide which hotel they’re interested in, before leaving trivago and being redirected to the partner website. Meaning the referral is higher quality and more likely to lead to a booking. This goal needed to be achieved whilst maintaining key business KPIs in the short term.
+      Provide a flow that allows users to decide which hotel they’re interested in, before being redirected to the partner website. Meaning the referral is higher quality and more likely to lead to a booking. This goal needed to be achieved whilst maintaining key business KPIs in the short term.
 
       ### 2. Native app design
 
@@ -59,13 +59,147 @@ priority: "0.6"
     :markdown
       ## Design Sprints
 
+      The redesign started in August 2017, and Design Sprints were organised around different sections of the app:
 
+      * Landing: One of the first screens users see when downloading the app. It’s where users start their search.
+      * Result list and hotel details: After a user performs a search, what do they see and how do they access more information about a specific hotel?
+      * Map: How can we utilise the map to help users decide which hotel is best for their trip?
+      * Booking experience: The transition between leaving trivago and going to the partner website isn’t clear. How can this be improved?
+
+      <em>Looking back, I think this was the wrong approach. As we tried to split the experience into different screens. But users don’t experience an app in screens, but rather flows across multiple screens. So I think a better approach would have been Design Sprints based on user flows.</em>
+
+%section.c-media
+  %figure
+    %img{src: "/images/projects/trivago-app-redesign/landing-sprint.jpg", alt: "Design Sprint sketches", data: {at2x: "https://gridnorthdesign.com/images/projects/trivago-app-redesign/landing-sprint@2x.jpg"}}/
+  %figcaption
+    %small
+      Idea sketches for the “Landing” Design Sprint.
 
 %section
   .container
     :markdown
       ## Testing an initial prototype
 
+      The designers from each sprint then worked together to mockup a prototype, bringing together the individual ideas into a complete app experience.
+
       <a href="https://richardchild.invisionapp.com/public/share/3P1BSWT2S8" target="_blank">View the initial prototype</a>
+
+      This prototype was tested in-house at the trivago office, recruiting participants in the Düsseldorf area. I can’t share photos of the test itself, but here's a short summary of the findings:
+
+      * Overall no major usability issues. Flow works but there are problems with entry points, e.g. for reviews.
+      * The transition from trivago to the OTA caused frustration for some participants
+      * Ratings should be given greater priority
+
+%section
+  .container
+    :markdown
+      ## The landing experience
+
+      My main responsibility area during the redesign was the landing experience. With a key part being what's known internally as the “Dealform”. The search component that allows users to enter their destination, dates, and number of guests.
+
+%section
+  .container
+    :markdown
+      ## Learning from previous research
+
+      At the time, the mobile web team were experimenting with flows relating to the search experience. And there was an in-house user test that had a key finding relating to the rooms and guests selector.
+
+      <em>Task: You want to visit Amsterdam from 28th September until 1st October. You are traveling in a group of 3 people (you and 2 friends) and you need 2 rooms, because you want to stay alone in one room, while 2 of your friends want to stay together in another room. Look for hotels that fit your needs.</em>
+
+      In the version tested, 3/6 participants were selecting the total number of adults, in this case 3. But not selecting the number of rooms. Even though in the task it specifies that 2 rooms are needed. To try and address this problem, it’s important to give the room selector more prominence in the design. So users understand that they need to additionally select the number of rooms. An important step for accurate hotel pricing.
+
+%section
+  .container
+    :markdown
+      ## Destination selector
+
+      There are 2 key areas of the destination selector that I want to highlight:
+
+      * The input field placeholder copy “Try cities, places, airports” is designed to inform the user that they don’t just need to enter a city (which is most common). You can also enter other places, such as attractions, airports, train stations etc.
+      * A common use case for mobile is searching nearby your current location, so the “Current location” option is given prominence.
+
+%section
+  .container
+    :markdown
+      ## Calendar
+
+      We wanted to keep the interaction simple, and users can set their dates with just a couple of taps:
+
+      * Full-screen calendar with large touch targets.
+      * User taps once to select the check-in date, then again to select their check-out date.
+      * If they select a check-in date, and then for the check-out date, select a date in the past. The check-in date changes.
+
+      The selected dates are positioned near the confirmation button, to allow the user to easily double-check their info before proceeding.
+
+%section
+  .container
+    :markdown
+      ## Rooms and guests
+
+      As mentioned previously, with the design it was important to address the problem of users not selecting the number of rooms. So the room number selector is given higher priority, and is shown above the number of adults/children.
+
+      With the UI, I want to give the feeling that each room was it’s own self-contained component. Similar to that of an actual room. Which is why I chose the card design. The default is 2 guests, 1 room. Which is the most common room configuration.
+
+%section
+  .container
+    :markdown
+      ## Problem with the destination, dates, guests flow
+
+      Partway through the process we noticed a problem with the Dealform flow. When a user entered their destination, they were taken back to the landing screen. It’s the same for dates and guests, once the user had entered their information, they were again taken back to the landing screen.
+
+      The issue is that it’s quite a long process. As the user needs to go back to the landing screen each time, and tap to open the next screen.
+
+%section.c-media
+  %figure
+    .c-media__iframe
+      <iframe src="https://player.vimeo.com/video/422100344?transparent=0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  %figcaption
+    %small
+      Returning to the landing screen each time is too long of a process.
+
+%section
+  .container
+    :markdown
+      ## The final design
+
+      I addressed the problem above, by transitioning the user directly to the calendar once they’ve entered a destination. The new flow is as follows:
+
+      Destination &#8594; Dates &#8594; List of results
+
+      As we’re using the most common room/guest configuration as the default (2 guests, 1 room), this is not included as part of the flow. But can always be changed from the list of results. The hotel cards allow the user to browse the list and get an overview. Before tapping on a card to learn more about a specific hotel.
+
+      The hotel details page aligned with our original goal of increasing business value depth. I can’t share specific business metrics, but when first released, the app didn’t meet the requirements for us to be able to quality the redesign. So the team worked on giving prices higher priority (I wasn’t involved in these changes), to try and create more of a balance between prices from partner websites, and hotel related content.
+
+%section.c-media
+  %figure
+    .c-media__iframe
+      <iframe src="https://player.vimeo.com/video/423361570?transparent=0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  %figcaption
+    %small
+      Final design, including improved Dealform flow.
+
+%section
+  .container
+    :markdown
+      ## Team video
+
+      A few members of the apps team shared their thoughts on the redesign. With the video being shared on trivago’s social channels.
+
+%section.c-media
+  %figure
+    .c-media__iframe
+      <iframe src="https://player.vimeo.com/video/422093753?transparent=0&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  %figcaption
+    %small
+      A few members of the team sharing their thoughts on the redesign.
+
+%section
+  .container
+    :markdown
+      ## Conclusion
+
+      Once the redesign had been qualified, we were able to achieve our original goal, of achieving the same business KPIs as the previous app in the short-term (and even surpassing the previous app in certain areas). This was a big achievement, as we felt the changes made to the increased visibility of hotel content, was a big step forward in terms of usability and increasing business value depth in the long-term.
+
+      The original deadline for both design and development was just a couple of months (it ended up taking roughly 4 months). Looking back, there was no clear reason why this deadline was so short. And it ended up causing stress within the team which was unnecessary. I could have spoken up more at the beginning of the project and voiced my concerns.
 
 = partial("/partials/back-to-projects")
