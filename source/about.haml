@@ -8,20 +8,23 @@ priority: "0.8"
 
 %section
   .container
-    %h1
-      About Richard*
-    %p
-      <em>*(That's me!)</em>
-    .row
-      .col-xs-8.col-sm-9.col-sm-push-3
-        %p
-          Hi, I'm Richard Child, and if you have a little time I'd like to introduce myself. I actually studied 3D Design at University, but one day we were asked to build a digital portfolio using tools such as Moonfruit and Wix.
-      .col-xs-4.col-sm-3.col-sm-pull-9
-        %img.c-profile-photo{src: "/images/profile-photo.jpg", alt: "Richard Child", data: {at2x: "https://gridnorthdesign.com/images/profile-photo@2x.jpg"}}/
-
     :markdown
+      # About Richard
+
+      <em>*(That's me!)</em>
+
+      Hi, I'm Richard Child, and if you have a little time I'd like to introduce myself. I actually studied 3D Design at University, but one day we were asked to build a digital portfolio using tools such as Moonfruit and Wix.
+
       I remember being annoyed that I couldn’t customise the design, so I started learning web development on Treehouse.
 
+    .c-media.inline
+      %figure
+        %img{src: "/images/ixda.jpg", alt: "IxDA Milan 2020", data: {at2x: "https://gridnorthdesign.com/images/ixda@2x.jpg"}}/
+      %figcaption
+        %small
+          trivago Design booth at IxDA Milan 2020.
+
+    :markdown
       Whilst living in Düsseldorf I joined a writing group, and since then I’ve been writing poetry and short stories. As an example, here’s a limerick that I wrote:
 
       *Did you hear about a man called John*<br>
