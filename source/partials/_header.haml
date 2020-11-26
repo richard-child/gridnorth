@@ -2,12 +2,12 @@
   .container
     .c-header__gradient
     %a.c-header__logo{href: "/"}
-      %img#header-logo{src: "", alt: "Grid North Design", "data-no-retina" => ""}/
+      %img#logo{src: "", alt: "Grid North Design", "data-no-retina" => ""}/
       :javascript
-        var logo = document.querySelector("img#header-logo");
-        var logos = ["/images/header/logo-1.svg", "/images/header/logo-2.svg", "/images/header/logo-3.svg", "/images/header/logo-4.svg", "/images/header/logo-5.svg", "/images/header/logo-6.svg"];
-        var newLogo = logos[Math.floor(Math.random() * logos.length)];
-        logo.setAttribute("src", newLogo);
+        var logo = document.querySelector("img#logo");
+        var logoSystem = ["/images/logo-system/logo-1.svg", "/images/logo-system/logo-2.svg", "/images/logo-system/logo-3.svg", "/images/logo-system/logo-4.svg", "/images/logo-system/logo-5.svg", "/images/logo-system/logo-6.svg"];
+        var logoRandomizer = logoSystem[Math.floor(Math.random() * logoSystem.length)];
+        logo.setAttribute("src", logoRandomizer);
 
     %nav.c-header__nav
       %ul
