@@ -19,7 +19,7 @@
   &:hover, &:focus
     @media (hover: hover)
       img
-        animation: compass-right 8s ease-in-out alternate infinite
+        animation: arrow-right 8s ease-in-out alternate infinite
 
   &.back
     padding-left: 16px
@@ -28,32 +28,32 @@
     &:hover, &:focus
       @media (hover: hover)
         img
-          animation: compass-left 8s ease-in-out alternate infinite
+          animation: arrow-left 8s ease-in-out alternate infinite
 
-@keyframes compass-right
+@keyframes arrow-right
   15%
-    transform: rotate(20deg)
+    transform: rotate(10deg)
   30%
-    transform: rotate(-30deg)
+    transform: rotate(-15deg)
   45%
     transform: rotate(0deg)
   70%
-    transform: rotate(-20deg)
+    transform: rotate(-10deg)
   85%
-    transform: rotate(30deg)
+    transform: rotate(5deg)
   100%
     transform: rotate(0deg)
 
-@keyframes compass-left
+@keyframes arrow-left
   15%
-    transform: rotate(-20deg)
+    transform: rotate(-10deg)
   30%
-    transform: rotate(30deg)
+    transform: rotate(15deg)
   45%
     transform: rotate(0deg)
   70%
-    transform: rotate(20deg)
+    transform: rotate(10deg)
   85%
-    transform: rotate(-30deg)
+    transform: rotate(-5deg)
   100%
     transform: rotate(0deg)
