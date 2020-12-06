@@ -12,48 +12,11 @@
       margin-top: 35px
       font-size: 20px
     img
-      margin: -4px 0 0 6px
-      width: 22px
+      margin: -4px 0 0 8px
+      width: 10px
       +min-width(481px)
-        width: 24px
-  &:hover, &:focus
-    @media (hover: hover)
-      img
-        animation: arrow-right 8s ease-in-out alternate infinite
-
+        width: 12px
   &.back
     padding-left: 16px
     img
-      margin: -4px 6px 0 0
-    &:hover, &:focus
-      @media (hover: hover)
-        img
-          animation: arrow-left 8s ease-in-out alternate infinite
-
-@keyframes arrow-right
-  15%
-    transform: rotate(10deg)
-  30%
-    transform: rotate(-15deg)
-  45%
-    transform: rotate(0deg)
-  70%
-    transform: rotate(-10deg)
-  85%
-    transform: rotate(5deg)
-  100%
-    transform: rotate(0deg)
-
-@keyframes arrow-left
-  15%
-    transform: rotate(-10deg)
-  30%
-    transform: rotate(15deg)
-  45%
-    transform: rotate(0deg)
-  70%
-    transform: rotate(10deg)
-  85%
-    transform: rotate(-5deg)
-  100%
-    transform: rotate(0deg)
+      margin: -4px 8px 0 0
