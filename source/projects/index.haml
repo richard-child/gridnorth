@@ -2,8 +2,6 @@
 title: "Projects | Grid North Design"
 
 description: "I've been a designer for over 7 years, and during that time I've worked both full-time and as a freelancer for companies including: trivago, Cabify and GNARBOX."
-
-priority: "0.8"
 ---
 
 %section
@@ -30,9 +28,19 @@ priority: "0.8"
         = partial("/partials/project-cards/trivago-sprint-facilitation")
       .col-sm-6
         = partial("/partials/project-cards/trivago-unfavourite-icon")
-
-    %a.c-button--secondary{href: "/projects/company-projects"}
-      View all company projects (10)
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-deals-navigation")
+      .col-sm-6
+        = partial("/partials/project-cards/trivago-privacy-settings")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-1")
+      .col-sm-6
+        = partial("/partials/project-cards/gnarbox-part-2")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/cabify")
 
 %section
   .container
