@@ -12,9 +12,18 @@
       margin-top: 35px
       font-size: 20px
     img
-      margin: -4px 0 0 8px
       width: 12px
-  &.back
-    padding-left: 16px
+      margin: -4px 0 0 8px
+      transition: transform 0.1s ease-in
+  &:hover, &:focus
     img
-      margin: -4px 8px 0 0
+      transform: translateX(2px)
+
+  &.back
+    &:link, &:visited, &:active
+      padding-left: 16px
+      img
+        margin: -4px 8px 0 0
+    &:hover, &:focus
+      img
+        transform: translateX(-2px)
