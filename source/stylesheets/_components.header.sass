@@ -13,7 +13,7 @@
   z-index: 20
 
   .c-header__gradient
-    +max-width(610px)
+    +max-width(500px)
       background: $header-gradient
       width: 50px
       height: 70px
@@ -31,6 +31,9 @@
     float: left
     img
       width: 70px
+      &:hover
+        opacity: 0.7
+        transition: opacity 0.2s ease-in
 
   .c-header__nav
     ul
@@ -45,6 +48,7 @@
           &:link, &:visited, &:active
             color: $header-nav-link
             text-transform: uppercase
+            letter-spacing: 0.1px
             text-decoration: none
             padding-bottom: 2px
             transition: border-bottom 0.05s ease-out
