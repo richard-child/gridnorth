@@ -1,6 +1,5 @@
 .c-card
-  width: 100%
-  height: 320px
+  padding-top: 70%
   margin-top: 30px
   border-radius: 6px
   overflow: hidden
@@ -8,56 +7,27 @@
   box-shadow: $card-shadow
   border: 1px solid $card-border
   transition: all 0.1s ease-in
-  +min-width(768px)
-    height: 280px
-  &.featured
-    +min-width(768px)
-      height: 360px
   &:hover
     border-color: $card-border-hover
     box-shadow: $card-shadow-hover
     transform: translateY(-1px)
 
   // Company projects
-  &.trivago-app-redesign
+  &.trivago-map-explore
     background: left top no-repeat image-url("projects/cards/trivago-app-redesign.jpg")
     +at2x("/images/projects/cards/trivago-app-redesign", jpg, 700px, 550px)
     background-size: cover !important
-  &.trivago-price-alerts
-    background: left top no-repeat image-url("projects/cards/trivago-price-alerts.jpg")
-    +at2x("/images/projects/cards/trivago-price-alerts", jpg, 700px, 550px)
-    background-size: cover !important
-  &.trivago-user-research-training
-    background: left top no-repeat image-url("projects/cards/trivago-user-research-training.jpg")
-    +at2x("/images/projects/cards/trivago-user-research-training", jpg, 700px, 550px)
+  &.trivago-map-entry-point
+    background: left top no-repeat image-url("projects/cards/trivago-app-redesign.jpg")
+    +at2x("/images/projects/cards/trivago-app-redesign", jpg, 700px, 550px)
     background-size: cover !important
   &.trivago-sprint-facilitation
     background: center center no-repeat image-url("projects/cards/trivago-sprint-facilitation.jpg")
     +at2x("/images/projects/cards/trivago-sprint-facilitation", jpg, 700px, 550px)
     background-size: cover !important
-  &.trivago-deals-navigation
-    background: left top no-repeat image-url("projects/cards/trivago-deals-navigation.jpg")
-    +at2x("/images/projects/cards/trivago-deals-navigation", jpg, 700px, 550px)
-    background-size: cover !important
-  &.trivago-privacy-settings
-    background: left top no-repeat image-url("projects/cards/trivago-privacy-settings.jpg")
-    +at2x("/images/projects/cards/trivago-privacy-settings", jpg, 700px, 550px)
-    background-size: cover !important
-  &.trivago-unfavourite-icon
-    background: right top no-repeat image-url("projects/cards/trivago-unfavourite-icon.jpg")
-    +at2x("/images/projects/cards/trivago-unfavourite-icon", jpg, 700px, 550px)
-    background-size: cover !important
-  &.gnarbox-part-1
-    background: right top no-repeat image-url("projects/cards/gnarbox-part-1.jpg")
-    +at2x("/images/projects/cards/gnarbox-part-1", jpg, 700px, 550px)
-    background-size: cover !important
-  &.gnarbox-part-2
-    background: center center no-repeat image-url("projects/cards/gnarbox-part-2.jpg")
-    +at2x("/images/projects/cards/gnarbox-part-2", jpg, 700px, 550px)
-    background-size: cover !important
-  &.cabify
-    background: left top no-repeat image-url("projects/cards/cabify.jpg")
-    +at2x("/images/projects/cards/cabify", jpg, 700px, 550px)
+  &.trivago-user-research-training
+    background: left top no-repeat image-url("projects/cards/trivago-user-research-training.jpg")
+    +at2x("/images/projects/cards/trivago-user-research-training", jpg, 700px, 550px)
     background-size: cover !important
 
   // Personal projects
@@ -90,17 +60,16 @@
     background-color: $card-details-bg
     box-shadow: $card-details-shadow
     width: 100%
-    padding: 15px
+    padding: 25px 23px
     position: absolute
     bottom: 0
     display: block
-    +min-width(481px)
-      padding: 15px 20px
-    small
+    p
       line-height: 1.3
+      margin-top: 0
       span
         color: $card-details-span
-        font-weight: 900
+        font-weight: 700
 
 // Remove first row margin
 section

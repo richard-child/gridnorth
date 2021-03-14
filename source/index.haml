@@ -11,6 +11,26 @@ priority: "1"
 
       I actually studied 3D Design at University, but one day we were asked to build a digital portfolio using tools such as Moonfruit and Wix. I remember being annoyed that I couldn’t customise the design, so I started learning web development on Treehouse.
 
-    %a.c-button{href: "/projects"}
-      Go to Projects
-      %img{src: "/images/icons/arrow-right.svg", "data-no-retina" => ""}/
+%section
+  .container
+    %h2
+      Company projects
+    = partial("/partials/project-cards/trivago-map-explore")
+    = partial("/partials/project-cards/trivago-map-entry-point")
+    = partial("/partials/project-cards/trivago-sprint-facilitation")
+    = partial("/partials/project-cards/trivago-user-research-training")
+
+%section
+  .container
+    %h2
+      Personal projects
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/kinex")
+      .col-sm-6
+        = partial("/partials/project-cards/sketch-tricks")
+    .row
+      .col-sm-6
+        = partial("/partials/project-cards/sketch-to-html")
+      .col-sm-6
+        = partial("/partials/project-cards/richard-writes")
